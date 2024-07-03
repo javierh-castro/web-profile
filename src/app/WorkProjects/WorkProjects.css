@@ -1,0 +1,68 @@
+/* #projects {
+  height: 1250px;
+} */
+
+.projects {
+  border: 2px solid red;
+  margin: 0px 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 40px;
+}
+
+.project {
+  font-size: 12px;
+  width: 400px; /*Espacio dentro del container*/
+  /* width: 450px; Para que este fijo pero no es lindo*/
+  height: 280px;
+  /*min-width: 400px;ES LO MAS IMPORTANTE QUE ISE*/
+  padding: 25px;
+  display: flex; /*elimina los puntos y da forma en vertical*/
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: var(--background2-color);
+  border-radius: 15px;
+  border: 1px solid rgba(24, 24, 24, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.figure {
+  /* width: 90%; */
+  gap: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figure img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.description {
+  /* display: flex; */
+  /* flex-direction: column; */
+
+  /* justify-content: space-between; */
+}
+.description h2 {
+  color: var(--main-color);
+}
+
+.card ul a {
+  margin: 5px;
+  padding: 4px 13px;
+  border: 2px solid var(--background-color);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--background-color);
+}
+
+.card ul a:hover {
+  background-color: var(--background-color);
+  color: #0f0909;
+}
