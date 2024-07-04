@@ -1,10 +1,10 @@
 import Home from "../components/Home/Home";
 
 export default function Profile() {
+
   return (
-    <main className="j">
+    <main>
       <Home/>
-      <h1>holla</h1>
     </main>
   );
 }

@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --color-primary: #fff;
+  --color-second: #fff;
+  --main-color: #00ffee;
+  --background-color: #00ffee;
+  --background2-color: rgba(255, 255, 255, 0.1);
+  --bg-color: #090a0f;
+  color: #f1ebeb;
+
+  --github-background: none;
+  --linkedin-background: none;
+  --cv-background: none;
 }
 
 * {
@@ -21,25 +22,47 @@
   padding: 0;
 }
 
-body {
-  /* border: 2px solid red; */
-  /* padding: 0px;
-  margin: 0px; */
-  /* width: 100vw; */
-  color: rgb(var(--foreground-rgb));
-  /* background-blend-mode: hard-light; */
-  /* background-position: 0 0, 1em 1em, 0 0; */
-
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+html {
+  scroll-behavior: smooth;
+}
+section{
+  margin-top: 60px;/*todos*/
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.dark-mode {
+  background-color: #f0ead2;
+  color: #090a0f;
+  --color-primary: #090a0f;
+  --color-second: #090a0f;
+  --bg-color: #f0ead2;
+  --main-color: #f77f00;
+  --background-color: #f77f00;
+  --background2-color: rgba(255, 216, 107, 0.479);
+
+  --github-background: #6c757d;
+  --linkedin-background: #2374c4;
+  --cv-background: #23c483;
+  /* background-color: #090a0f;
+  --color-primary: #fff;
+  --color-second: #fff;
+  --main-color: #00ffee;
+  --background-color: #00ffee;
+  --background2-color: rgba(255, 255, 255, 0.1);
+  --bg-color: #090a0f;
+  color: #f1ebeb;
+
+  --github-background: none;
+  --linkedin-background: none;
+  --cv-background: none; */
+}
+
+body {
+  background: url("/img/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 12px;
 }

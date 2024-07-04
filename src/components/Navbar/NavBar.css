@@ -1,18 +1,14 @@
 
-
 .nav {
-  border: 2px solid red;
-  background-color: var(--background2-color);
-  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
   height: 55px;
   width: 100%;
   text-align: center;
   padding: 0px 10%;
-  transition: all 0.5s ease;
-  /* font-size: 18px; */
-  /* position: fixed; */
+  transition: all 0.5s ease; */
 }
 
 /* aside {
@@ -50,6 +46,7 @@
 }
 
 .nav_links {
+  margin-top: 20px;/*No se si esta bien*/
   list-style-type: none; /*Esto elimina el punto*/
   margin-left: 10%;
   display: flex;
@@ -64,11 +61,17 @@
   border-radius: 4px;
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: bold;
   transition: all 0.5s ease;
 }
 
 .nav_links li p:hover {
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
+    0 0 20px var(--background-color);
+  color: #434343;
+}
+
+.active_link{
   background-color: var(--background-color);
   box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
     0 0 20px var(--background-color);
@@ -80,3 +83,5 @@
   display: grid;
   place-items: center;
 }
+
+/*--------------------------*/
