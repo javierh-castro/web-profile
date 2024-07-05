@@ -4,16 +4,8 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <div className="container">
-          <div className="footer-brand">
-            <p className="footer-text">
-              Info
-            </p>
-          </div>
-
+          <h3>Disponible para trabajar, conectemos.</h3>
           <div className="footer-contact">
-            <h4 className="contact-title">Contact Us</h4>
-
             <p className="contact-text">Feel free to contact and reach us !!</p>
 
             <ul>
@@ -34,23 +26,12 @@ function Footer() {
               </li>
             </ul>
           </div>
-
-          <div className="footer-form">
-            <p className="form-text">
-              Subscribe our newsletter for more update &amp; news !!
-            </p>
-
-            <button type="submit" className="btn btn-secondary">
-              Subscribe
-            </button>
-          </div>
-        </div>
       </div>
 
       <div className="footer-bottom">
         <div className="container">
           <p className="copyright">
-            &copy; 2024 <a href="">Javier Castro</a>. All rights reserved
+            &copy; 2024 <a href="">Javier Castro</a> Developer.
           </p>
 
           <ul className="footer-bottom-list">

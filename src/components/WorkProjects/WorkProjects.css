@@ -6,24 +6,50 @@
   gap: 40px 40px;
 }
 
+
 .project {
-  font-size: 12px;
-  width: 400px; /*Espacio dentro del container*/
-  padding: 10px 25px;
-  gap: 10px;
-  display: flex; /*elimina los puntos y da forma en vertical*/
+  font-size: 14px;
+  width: 18em;
+  position: relative;
+  border-radius: 20px;
+  padding: 20px 25px;
+  border: 2px solid  black;
+  transition: all 0.4s;
+  backdrop-filter: blur(30px);
+  background-color: rgba(217, 217, 217, 0.527);
+  width: 400px;
+  /* gap: 10px; */
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: var(--background2-color);
-  border-radius: 15px;
+  /* background-color: var(--background2-color); */
+  /* border-radius: 15px;
   border: 1px solid rgba(24, 24, 24, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  border: 2px solid red;;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+  /* border: 2px solid red;; */
 }
+
+.project:hover {
+  box-shadow: 4px 4px 0 1px rgba(0,0,0);
+}
+
+.offer {
+  font-weight: 800;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.project:hover .offer {
+  color: #007200;
+  border-color: #007200;
+}
+
 
 .figure {
   /* width: 90%; */
+  /* border: 2px solid red; */
   gap: 15px 0px;
   display: flex;
   flex-direction: column;
@@ -39,7 +65,7 @@
   color: var(--main-color);
 }
 
-.card ul a {
+.project ul a {
   margin: 5px;
   padding: 4px 13px;
   border: 2px solid var(--background-color);
@@ -47,9 +73,10 @@
   cursor: pointer;
   font-size: 14px;
   color: var(--background-color);
+  /* border: 2px solid red; */
 }
 
-.card ul a:hover {
+.project ul a:hover {
   background-color: var(--background-color);
   color: #0f0909;
 }

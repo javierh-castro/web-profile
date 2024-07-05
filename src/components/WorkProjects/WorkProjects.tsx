@@ -4,13 +4,15 @@ import Image from "next/image";
 
 export default function WorkProjects() {
     return (
+      
       <section id="projects">
       <h1 className="section">Portafolio</h1>
       <p>Aca les proyecto todos los proyectos que e construido</p>
       <ul className="projects">
+        <div className='cardContainer'>
         <li className="project">
           <aside className="description">
-            <h4>Recipify</h4>
+            <h4 className='offer'>Recipify</h4>
             <p>
               En este proyecto echo en equipo basado en next.js, es una web
               donde te registras y buscas recetas de cocina también podes
@@ -33,9 +35,10 @@ export default function WorkProjects() {
             </ul>
           </figure>
         </li>
+        </div>
         <li className="project">
           <aside className="description">
-            <h4>Un e-commerce web</h4>
+            <h4 className='offer'>Un e-commerce web</h4>
             <p>
               Es un commerce con react donde podes filtrar por precio y
               categoría y tiene una carrito de compra.
@@ -62,7 +65,7 @@ export default function WorkProjects() {
 
         <li className="project">
           <aside className="description">
-            <h4>Control financiero</h4>
+            <h4 className='offer'>Control financiero</h4>
             <p>
               Ayuda a tener un balance financiero y también genera un registro
               de gastos e ingresos.
@@ -86,7 +89,7 @@ export default function WorkProjects() {
         </li>
         <li className="project">
           <aside className="description">
-            <h4>Tic Tac Toe</h4>
+            <h4 className='offer'>Tic Tac Toe</h4>
             <p>Se trata del juego tic tac toe y esta basado en react.</p>
           </aside>
           <figure className="figure">
@@ -107,7 +110,7 @@ export default function WorkProjects() {
         </li>
         <li className="project">
           <aside className="description">
-            <h4>Organizador de tareas</h4>
+            <h4 className='offer'>Organizador de tareas</h4>
             <p>
               Este proyecto es para organizar las tareas que tenes pendientes y
               estas por hacer.
@@ -131,7 +134,7 @@ export default function WorkProjects() {
         </li>
         <li className="project">
           <aside className="description">
-            <h4>Crud de usuarios</h4>
+            <h4 className='offer'>Crud de usuarios</h4>
             <p>
               El proyecto muestra un crud de usuarios y también se puede
               organizar los usuarios según su categorías.

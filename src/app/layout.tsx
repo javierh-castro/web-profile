@@ -3,8 +3,11 @@ import type { Metadata } from "next";
 import { montserrat } from "../components/Fonts/Fonts";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
+// import { NextUIProvider } from '@nextui-org/react';
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/Navbar/NavBar";
+import Background from "../components/Background/Background";
+// import background from "../../public/img/background.svg";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -20,11 +23,19 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>
+      <head>
+      <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+      </head>
+      <body className={`body ${montserrat.className} antialiased`}>
+      {/* <NextUIProvider> */}
+      <Background/>
         <NavBar/>
-        {/* <img src="/img/background.svg"/> */}
         {children}
         <Footer />
+      {/* </NextUIProvider> */}
       </body>
     </html>
   );

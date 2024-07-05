@@ -17,14 +17,14 @@
   --cv-background: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
+
+/* * {
+  margin: 0;
+  padding: 0; 
+}*/
 /* section{
   margin-top: 60px;
 } */
@@ -42,23 +42,12 @@ html {
   --github-background: #6c757d;
   --linkedin-background: #2374c4;
   --cv-background: #23c483;
-  /* background-color: #090a0f;
-  --color-primary: #fff;
-  --color-second: #fff;
-  --main-color: #00ffee;
-  --background-color: #00ffee;
-  --background2-color: rgba(255, 255, 255, 0.1);
-  --bg-color: #090a0f;
-  color: #f1ebeb;
-
-  --github-background: none;
-  --linkedin-background: none;
-  --cv-background: none; */
 }
 
-/* body {
-  background: url("/img/background.svg");
+.body {
+  background-color: #124559;
+  /* background: url("/img/background.svg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-} */
+}

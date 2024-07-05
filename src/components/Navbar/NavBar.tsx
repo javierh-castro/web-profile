@@ -5,6 +5,7 @@ import "./NavBar.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+// import {Dropdown} from '@nextui-org/react'
 
 const links = [
   { name: "Home", href: "/" },
@@ -44,7 +45,7 @@ function NavBar() {
   }, [clientWindowHeight]);
 
   return (
-    <nav
+    <nav className="nav"
       style={{
         position: 'sticky',
         top: 0,
@@ -55,7 +56,7 @@ function NavBar() {
         width: '100%',
         padding: '0px 10%',
         transition: 'all 0.5s ease',
-        background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
+        background: `rgba(1, 22, 31, ${backgroundTransparacy})`,
         boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
         zIndex: 1000, // Asegura que el nav se quede encima de otros elementos
       }}
@@ -73,8 +74,7 @@ function NavBar() {
         ))}
       </ul>
       <aside>
-        <button>Idioma</button>
-        <button>Modo</button>
+        <button className='shadow-xl'>Idioma</button>
       </aside>
     </nav>
   );

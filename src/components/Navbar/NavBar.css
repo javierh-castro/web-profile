@@ -1,6 +1,6 @@
 /* Estilos para el contenedor nav */
 .nav {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgb(1, 22, 31); */
   text-decoration: none;
   text-align: center;
 }
@@ -26,27 +26,52 @@
 
 /* Estilos para los textos dentro de los enlaces */
 .nav_links li p {
-  border: 2px solid red;
-  border: none;
+  /* border: none;
   text-decoration: none;
   border-radius: 4px;
-  color: inherit;
-  transition: all 0.5s ease;
+  color: inherit;*/
+  width: 100px;
+  transition: all 0.5s ease; 
   animation: tracking-in-expand-forward-top 0.4s linear both;
 }
 
-.nav_links li p:hover {
+/* .nav_links li p:hover {
   background-color: var(--background-color);
   box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
     0 0 20px var(--background-color);
   color: #434343;
+} */
+
+.nav_links li p::before {
+  margin-left: auto;
+}
+
+.nav_links li p::after, .nav_links li p::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #007200;/*#25a18e;*/
+  display: block;
+  transition: 0.5s;
+}
+
+.nav_links li p:hover::after, .nav_links li p:hover::before {
+  width: 100%;
 }
 
 .active_link {
-  background-color: var(--background-color);
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #007200;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  /* background-color: var(--background-color);
   box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
     0 0 20px var(--background-color);
-  color: #434343;
+  color: #434343; */
 }
 
 .dynamic {

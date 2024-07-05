@@ -4,18 +4,6 @@
   color: var(--gainsboro);
 }
 
-.footer-brand {
-  margin-bottom: 30px;
-}
-
-.footer-brand img {
-  width: 180px;
-}
-
-.footer-brand .logo {
-  margin-bottom: 20px;
-}
-
 .footer-text {
   font-size: var(--fs-5);
   line-height: 1.7;
