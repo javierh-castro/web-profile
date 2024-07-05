@@ -1,35 +1,61 @@
-
+/* Estilos para el contenedor nav */
 .nav {
   background-color: rgba(255, 255, 255, 0.1);
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 55px;
-  width: 100%;
-  text-align: center;
-  padding: 0px 10%;
-  transition: all 0.5s ease; */
-}
-
-/* aside {
-  border: 2px solid red;
-} */
-
-.img {
-  display: flex;
-  align-items: center;
-}
-
-.imagen {
-  height: 40px;
-  width: 40px;
-  border-radius: 25px;
-}
-
-.nav_links li p {
   text-decoration: none;
+  text-align: center;
+}
+
+.nav_links {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  /* padding: 0; */
+  height: 30px;
+}
+
+/* Estilos para los elementos de la lista */
+.nav_links li {
+  list-style-type: none;
+}
+
+/* Estilos para los enlaces */
+.nav_links a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+/* Estilos para los textos dentro de los enlaces */
+.nav_links li p {
+  border: 2px solid red;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  color: inherit;
+  transition: all 0.5s ease;
   animation: tracking-in-expand-forward-top 0.4s linear both;
 }
+
+.nav_links li p:hover {
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
+    0 0 20px var(--background-color);
+  color: #434343;
+}
+
+.active_link {
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
+    0 0 20px var(--background-color);
+  color: #434343;
+}
+
+.dynamic {
+  /* margin-right: 10%; */
+  display: grid;
+  place-items: center;
+}
+
+/* Keyframes para la animación */
 @keyframes tracking-in-expand-forward-top {
   0% {
     letter-spacing: -0.2em;
@@ -44,44 +70,3 @@
     opacity: 1;
   }
 }
-
-.nav_links {
-  margin-top: 20px;/*No se si esta bien*/
-  list-style-type: none; /*Esto elimina el punto*/
-  margin-left: 10%;
-  display: flex;
-  align-items: center;
-}
-
-.nav_links li {
-  margin-right: 20px;
-}
-
-.nav_links li p {
-  border-radius: 4px;
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-.nav_links li p:hover {
-  background-color: var(--background-color);
-  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
-    0 0 20px var(--background-color);
-  color: #434343;
-}
-
-.active_link{
-  background-color: var(--background-color);
-  box-shadow: 0 0 10px var(--background-color), 0 0 20px var(--background-color),
-    0 0 20px var(--background-color);
-  color: #434343;
-}
-
-.dynamic {
-  margin-right: 10%;
-  display: grid;
-  place-items: center;
-}
-
-/*--------------------------*/

@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import { montserrat } from "../components/Fonts/Fonts";
 import "./globals.css";
-import "./layout.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/Navbar/NavBar";
@@ -23,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.className} antialiased`}>
         <NavBar/>
+        {/* <img src="/img/background.svg"/> */}
         {children}
         <Footer />
       </body>

@@ -9,10 +9,10 @@
   background-size: cover;
   background-attachment: scroll;
 }
-
+/* 
 .home.active {
   z-index: -3;
-}
+} */
 
 .particle {
   position: absolute;

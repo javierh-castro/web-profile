@@ -25,9 +25,9 @@
 html {
   scroll-behavior: smooth;
 }
-section{
-  margin-top: 60px;/*todos*/
-}
+/* section{
+  margin-top: 60px;
+} */
 
 .dark-mode {
   background-color: #f0ead2;
@@ -56,13 +56,9 @@ section{
   --cv-background: none; */
 }
 
-body {
+/* body {
   background: url("/img/background.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-h2 {
-  font-size: 12px;
-}
+} */
