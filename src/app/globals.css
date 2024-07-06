@@ -10,7 +10,7 @@
   --background-color: #00ffee;
   --background2-color: rgba(255, 255, 255, 0.1);
   --bg-color: #090a0f;
-  color: #f1ebeb;
+  /* color: #f1ebeb; */
 
   --github-background: none;
   --linkedin-background: none;
@@ -21,10 +21,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* * {
-  margin: 0;
-  padding: 0; 
-}*/
+* {
+  color: #f1ebeb;
+  /* margin: 0;
+  padding: 0;  */
+}
 /* section{
   margin-top: 60px;
 } */

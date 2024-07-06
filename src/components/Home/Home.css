@@ -1,10 +1,8 @@
 .home {
-  flex-direction: column;
   align-items: center;
-  height: 880px;
   width: 75vw;
   margin: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 /* 
 .home.active {
@@ -14,23 +12,22 @@
 .presentation {
   display: flex;
   place-items: center;
-  height: 450px;
+  height: 430px;
   justify-content: space-between;
 }
 
-.titulo h2 {
-  font-size: 6rem;
-}
-
-
 .titulo {
   place-items: center;
-  width: 60%;
+  width: 70%;
 }
 
+.titulo h2 {
+  font-size: 5rem;
+}
+
+
 .latest_projects{
-  /* height: 100%; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   text-align: center;
   width: 40%;
@@ -118,9 +115,6 @@
   }
 }
 
-.titulo p {
-  /* margin-top: 30px; */
-}
 
 .links-perfil {
   gap: 20px;
@@ -132,8 +126,8 @@
 .links-perfil a {
   text-decoration: none;
   font-size: 20px;
-  color: #fff;
 }
+
 .github {
   display: flex;
   padding-top: 4px;
@@ -211,14 +205,6 @@
   transform: translateY(-1px);
 }
 
-/*Esto es para todos los titulos*/
-/* .section {
-  text-align: center;
-  font-size: 40px;
-  padding: 20px 0px;
-  margin: 50px 0px;
-  color: var(--main-color);
-} */
 .slider {
   overflow: hidden;
 }
@@ -245,32 +231,36 @@
   }
 }
 
+/*Esto es para todos los titulos*/
+/* .section {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px 0px;
+  margin: 50px 0px;
+  color: var(--main-color);
+} */
+
 @media (max-width: 760px) {
   /*-------------------Home-------------------*/
   .home {
+      width: 93vw;
+      flex-wrap: wrap;
     /* z-index: -3; */
   }
 
   /*-------------------Portafolio-------------------*/
   .presentation {
-    /* margin: 15px; */
-    width: 93vw;
-    padding: 0;
-    display: flex;
+    height: 530px;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 
   .slider {
-    width: 93vw;
+    /* width: 93vw; */
   }
 
   .titulo {
-    
-    width: 100%;
-    /* width: 90%; */
-    /* margin-top: 100px; */
+      margin-top: 30px;
+      width: 100%;
   }
 
   .text-animation {
@@ -281,14 +271,5 @@
 
   .text-animation span {
     margin-left: 5px;
-  }
-
-  .titulo h1 {
-    font-size: 40px;
-  }
-
-  .titulo h3 {
-    display: flex;
-    font-size: 26px;
   }
 }
