@@ -1,3 +1,4 @@
+import './Button.css'
 import React from "react";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 
@@ -10,11 +11,12 @@ export default function ButtonIdioma() {
   );
 
   return (
-    <Dropdown>
+    <Dropdown className="custom-dropdown-menu">
+      
       <DropdownTrigger>
         <Button 
           variant="bordered" 
-          className="capitalize"
+          className="capitalize custom-button"
         >
           {selectedValue}
         </Button>
@@ -27,8 +29,8 @@ export default function ButtonIdioma() {
         selectedKeys={selectedKeys}
         onSelectionChange={setSelectedKeys}
       >
-        <DropdownItem key="Español">Español</DropdownItem>
-        <DropdownItem key="Ingles">Ingles</DropdownItem>
+        <DropdownItem key="Español" className="custom-dropdown-item">Español</DropdownItem>
+        <DropdownItem key="Ingles" className="custom-dropdown-item">Ingles</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );

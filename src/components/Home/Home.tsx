@@ -1,6 +1,48 @@
+"use client";
+
 import "./Home.css";
+import { useEffect, useRef } from "react";
+import { SiNestjs, SiZod, SiPostgresql, SiExpress, SiReact, SiRedux, SiTailwindcss, SiCss3, SiMongodb, SiMysql, SiGithub  } from "react-icons/si";
+import { RiNextjsLine, RiJavascriptFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { IoLogoPython } from "react-icons/io5";
+import { FaNodeJs, FaGitAlt } from "react-icons/fa";
+
 
 export default function Home() {
+  const scrollersRef = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    const scrollers = scrollersRef.current;
+
+    // If a user hasn't opted in for reduced motion, then we add the animation
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation(scrollers);
+    }
+  }, []);
+
+  const addAnimation = (scrollers: HTMLDivElement[]) => {
+    scrollers.forEach((scroller) => {
+      // add data-animated="true" to every `.scroller` on the page
+      scroller.setAttribute("data-animated", "true");
+
+      // Make an array from the elements within `.scroller-inner`
+      const scrollerInner = scroller.querySelector(
+        ".scroller__inner"
+      ) as HTMLDivElement;
+      const scrollerContent = Array.from(scrollerInner.children);
+
+      // For each item in the array, clone it
+      // add aria-hidden to it
+      // add it into the `.scroller-inner`
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true) as HTMLElement;
+        duplicatedItem.setAttribute("aria-hidden", "true");
+        scrollerInner.appendChild(duplicatedItem);
+      });
+    });
+  };
+
   return (
     <section className="home">
       <article className="presentation">
@@ -14,6 +56,9 @@ export default function Home() {
             importantes que reflejan mi compromiso y pasión por mi profesión.
           </p>
           <div className="links-perfil">
+            <p className="git">
+            <SiGithub />
+            </p>
             <p>
               <a
                 className="github"
@@ -66,7 +111,7 @@ export default function Home() {
               <a
                 target="_blank"
                 className="text-xl"
-                href="https://amynogym-shop.vercel.app"
+                href="https:/"
               >
                 Amynogym Tienda-Ecommerce
               </a>
@@ -75,45 +120,32 @@ export default function Home() {
           </div>
         </div>
       </article>
-      <article className="slider">
-        <ul className="slide-track">
-          <li className="slide">
-            <img src="./icon/js.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/html.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/css.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/bootstrap.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/node.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/Mysql.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/python.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/react.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/types.ico" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/expressjs.png" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/tailwind.png" alt="img icon" />
-          </li>
-          <li className="slide">
-            <img src="/icon/mongo.png" alt="img icon" />
-          </li>
-        </ul>
+      <article>
+        <div
+          className="scroller"
+          ref={(el) => {
+            if (el) scrollersRef.current[0] = el;
+          }}
+        >
+          <div className="scroller__inner">
+            <FaGitAlt size={70}/>
+            <SiCss3 size={70}/>
+            <SiTailwindcss size={70}/>
+            <SiReact size={70}/>
+            <SiRedux size={70}/>
+            <FaNodeJs size={70}/>
+            <SiExpress size={70}/>
+            <IoLogoPython size={70}/>
+            <BiLogoTypescript size={70}/>
+            <RiJavascriptFill size={70}/>
+            <SiPostgresql size={70}/>
+            <SiMongodb size={70}/>
+            <SiMysql size={70}/>
+            <SiZod size={70}/>
+            <RiNextjsLine size={70}/>
+            <SiNestjs size={70} color="#E0234E"/>
+          </div>
+        </div>
       </article>
     </section>
   );

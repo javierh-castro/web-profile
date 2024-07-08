@@ -2,7 +2,7 @@ import './MySkills.css'
 
 export default function MySkills() {
     return (
-      <section id="skills" className="skills">
+      <section className="skills">
         <h1 className="no-responsive section">Habilidades</h1>
         <div className="format">
           <article className="skills-text">

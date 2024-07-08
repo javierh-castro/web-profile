@@ -5,12 +5,9 @@ import "./NavBar.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import ButtonIdioma from './Button/ButtonIdioma'
+import ButtonIdioma from "./Button/ButtonIdioma";
 // import {Dropdown} from '@nextui-org/react'
 // import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
-
-
-
 
 const links = [
   { name: "Home", href: "/" },
@@ -26,15 +23,6 @@ function NavBar() {
   const [padding, setPadding] = useState<number>(30);
   const [boxShadow, setBoxShadow] = useState<number>(0);
   const [menuVisible, setMenuVisible] = useState(false);
-  // // const [selectedKeys, setSelectedKeys] = React.useState(new Set(["text"]));
-  // const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set(["text"]));
-
-  // // Función de adaptación
-  // const handleSelectionChange = (keys: Set<React.Key>) => {
-  //   // Convierte 'keys' al tipo esperado por 'setSelectedKeys'
-  //   const newKeys = new Set<string>(Array.from(keys) as string[]);
-  //   setSelectedKeys(newKeys);
-  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,8 +47,8 @@ function NavBar() {
     }
   }, [clientWindowHeight]);
 
-   //Control de menu responsive
-   const handleToggle = () => {
+  //Control de menu responsive
+  const handleToggle = () => {
     setMenuVisible((prevMenuVisible) => !prevMenuVisible);
   };
 
@@ -68,10 +56,9 @@ function NavBar() {
     setMenuVisible(false); // Cierra el menú al hacer clic en un elemento de navegación
   };
 
-
   return (
     <nav
-    className={`nav-links ${menuVisible ? "nav-menu_visible" : " "}`}
+      className={`nav-links ${menuVisible ? "nav-menu_visible" : " "}`}
       style={{
         position: "sticky",
         top: 0,
@@ -79,8 +66,8 @@ function NavBar() {
         alignItems: "center",
         justifyContent: "space-between",
         height: "60px",
-        width: '100%',
-        padding: '0px 12%',
+        width: "100%",
+        padding: "0px 12%",
         transition: "all 0.5s ease",
         background: `rgba(1, 22, 31, ${backgroundTransparacy})`,
         boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
@@ -88,12 +75,12 @@ function NavBar() {
       }}
     >
       <button
-            className="nav-toggle"
-            aria-label={menuVisible ? "Cerrar menú" : "Abrir menú"}
-            onClick={handleToggle}
-          >
-            <i className="bi bi-list"></i>
-          </button>
+        className="nav-toggle"
+        aria-label={menuVisible ? "Cerrar menú" : "Abrir menú"}
+        onClick={handleToggle}
+      >
+        <i className="bi bi-list"></i>
+      </button>
       <Image src="/img/j2.png" alt="logo de perfil" width={50} height={30} />
       <ul className="nav_links">
         {links.map((link) => (
@@ -106,7 +93,7 @@ function NavBar() {
           </li>
         ))}
       </ul>
-      <ButtonIdioma/>
+        <ButtonIdioma/>
     </nav>
   );
 }

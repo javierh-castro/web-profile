@@ -1,0 +1,19 @@
+.custom-button {
+  width: 100px;
+  color: #fff; /* Color del texto del botón */
+}
+
+.custom-dropdown-menu {
+  background-color: rgba(
+    90,
+    90,
+    90,
+    0.3
+  ); /* Color de fondo con transparencia */
+  backdrop-filter: blur(10px); /* Efecto difuminado */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.custom-dropdown-item {
+  background-color: #252422; /* Color de fondo de los ítems */
+}
