@@ -30,8 +30,9 @@ export default function WorkProjects() {
                 <a
                   href="https://github.com/javierh-castro/proyect-recipify"
                   target="_blank"
-                  className="bi bi-github"
-                ></a>
+                  className="bi-github"
+                >
+                </a>
                 <a
                   href="https://recipify-rho.vercel.app/recetas"
                   target="_blank"
@@ -50,7 +51,12 @@ export default function WorkProjects() {
             </p>
           </aside>
           <figure className="figure">
-            <img src="img/commerce.png" alt="proyecto crud" />
+          <Image
+                src="/img/commerce.png"
+                alt="proyecto ecommerce"
+                width={370}
+                height={170}
+              />
             <ul>
               <a
                 href="https://github.com/javierh-castro/proyect-ecommerce/tree/master"
@@ -77,7 +83,12 @@ export default function WorkProjects() {
             </p>
           </aside>
           <figure className="figure">
-            <img src="img/income expenses.png" alt="proyecto crud" />
+            <Image
+                src="/img/income expenses.png"
+                alt="proyecto expenses"
+                width={370}
+                height={170}
+              />
             <ul>
               <a
                 href="https://github.com/javierh-castro/Income-and-Expenses"
@@ -98,7 +109,12 @@ export default function WorkProjects() {
             <p>Se trata del juego tic tac toe y esta basado en react.</p>
           </aside>
           <figure className="figure">
-            <img src="img/tic tac toe.png" alt="proyecto crud" />
+            <Image
+                src="/img/recipify.png"
+                alt="proyecto tic tac toe"
+                width={370}
+                height={170}
+              />
             <ul>
               <a
                 href="https://github.com/javierh-castro/tic-tac-toe"
@@ -122,7 +138,12 @@ export default function WorkProjects() {
             </p>
           </aside>
           <figure className="figure">
-            <img src="img/task.png" alt="proyecto crud" />
+            <Image
+                src="/img/task.png"
+                alt="proyecto task"
+                width={370}
+                height={170}
+              />
             <ul>
               <a
                 href="https://github.com/javierh-castro/React-task-control-example"
@@ -146,7 +167,12 @@ export default function WorkProjects() {
             </p>
           </aside>
           <figure className="figure">
-            <img src="img/crud 2.png" alt="proyecto crud" />
+            <Image
+                src="/img/crud 2.png"
+                alt="proyecto task"
+                width={370}
+                height={170}
+              />
             <ul>
               <a
                 href="https://github.com/javierh-castro/CRUD-2"

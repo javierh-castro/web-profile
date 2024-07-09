@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import ButtonIdioma from "./Button/ButtonIdioma";
+import NavBarResponsive from "./NavBarResponsive/NavBarResponsive";
 // import {Dropdown} from '@nextui-org/react'
 // import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 
@@ -48,53 +49,58 @@ function NavBar() {
   }, [clientWindowHeight]);
 
   //Control de menu responsive
-  const handleToggle = () => {
-    setMenuVisible((prevMenuVisible) => !prevMenuVisible);
-  };
+  // const handleToggle = () => {
+  //   setMenuVisible((prevMenuVisible) => !prevMenuVisible);
+  // };
 
   const handleMenuItemClick = () => {
     setMenuVisible(false); // Cierra el menú al hacer clic en un elemento de navegación
   };
 
   return (
-    <nav
-      className={`nav-links ${menuVisible ? "nav-menu_visible" : " "}`}
-      style={{
-        position: "sticky",
-        top: 0,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        height: "60px",
-        width: "100%",
-        padding: "0px 12%",
-        transition: "all 0.5s ease",
-        background: `rgba(1, 22, 31, ${backgroundTransparacy})`,
-        boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-        zIndex: 1000, // Asegura que el nav se quede encima de otros elementos
-      }}
-    >
-      <button
-        className="nav-toggle"
-        aria-label={menuVisible ? "Cerrar menú" : "Abrir menú"}
-        onClick={handleToggle}
+    <>
+      <div className="NavBarResponsive">
+      <NavBarResponsive/>
+      </div>
+      <nav
+        className="nav-menu_visible"
+        style={{
+          position: "sticky",
+          top: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          height: "60px",
+          width: "100%",
+          padding: "0px 12%",
+          transition: "all 0.5s ease",
+          background: `rgba(1, 22, 31, ${backgroundTransparacy})`,
+          boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+          zIndex: 1000, // Asegura que el nav se quede encima de otros elementos
+        }}
       >
-        <i className="bi bi-list"></i>
-      </button>
-      <Image src="/img/j2.png" alt="logo de perfil" width={50} height={30} />
-      <ul className="nav_links">
-        {links.map((link) => (
-          <li key={link.name}>
-            <Link href={link.href}>
-              <p className={`${pathname === link.href ? "active_link" : ""}`}>
-                {link.name}
-              </p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-        <ButtonIdioma/>
-    </nav>
+        {/* <button
+          className="nav-toggle"
+          aria-label={menuVisible ? "Cerrar menú" : "Abrir menú"}
+          onClick={handleToggle}
+        >
+          <i className="bi bi-list"></i>
+        </button> */}
+        <Image src="/img/j2.png" alt="logo de perfil" width={50} height={30} />
+        <ul className="nav_links">
+          {links.map((link) => (
+            <li key={link.name}>
+              <Link href={link.href}>
+                <p className={`${pathname === link.href ? "active_link" : ""}`}>
+                  {link.name}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <ButtonIdioma />
+      </nav>
+    </>
   );
 }
 
