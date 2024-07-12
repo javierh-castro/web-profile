@@ -74,19 +74,22 @@ function NavBar() {
           width: "100%",
           padding: "0px 12%",
           transition: "all 0.5s ease",
-          background: `rgba(1, 22, 31, ${backgroundTransparacy})`,
+          backgroundColor: '#0b2219',
+          backdropFilter: 'blur(10px)',
+          // borderottom: '1.5px solid rgba(255, 255, 255, 0.2)',
           boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-          zIndex: 1000, // Asegura que el nav se quede encima de otros elementos
+          zIndex: 1000,
         }}
-      >
+        >
         {/* <button
+        // background: `#283d3b`,
           className="nav-toggle"
           aria-label={menuVisible ? "Cerrar menú" : "Abrir menú"}
           onClick={handleToggle}
         >
           <i className="bi bi-list"></i>
         </button> */}
-        <Image src="/img/j2.png" alt="logo de perfil" width={50} height={30} />
+        <Image className="logo" src="/img/Logo.png" alt="logo de perfil" width={50} height={50}/>
         <ul className="nav_links">
           {links.map((link) => (
             <li key={link.name}>

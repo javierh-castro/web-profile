@@ -1,8 +1,13 @@
 /* Estilos para el contenedor nav */
 .nav {
+  /* color: rgb(11, 34, 25); */
   /* background-color: rgb(1, 22, 31); */
   /* text-decoration: none; */
   /* text-align: center; */
+}
+
+.logo{
+  border-radius: 40px;
 }
 
 .NavBarResponsive {
