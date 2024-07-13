@@ -12,9 +12,9 @@ import NavBarResponsive from "./NavBarResponsive/NavBarResponsive";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Portafolio", href: "/WorkProjects" },
+  { name: "Servicios", href: "/ServicesPage" },
+  { name: "Proyectos", href: "/WorkProjects" },
   { name: "Habilidades", href: "/Skills" },
-  { name: "Contacto", href: "/Contact" },
 ];
 
 function NavBar() {
@@ -63,22 +63,22 @@ function NavBar() {
       <NavBarResponsive/>
       </div>
       <nav
-        className="nav-menu_visible"
+        className="nav nav-menu_visible"
         style={{
-          position: "sticky",
-          top: 0,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          height: "60px",
-          width: "100%",
-          padding: "0px 12%",
-          transition: "all 0.5s ease",
-          backgroundColor: '#0b2219',
-          backdropFilter: 'blur(10px)',
+          // position: "sticky",
+          // top: 0,
+          // display: "flex",
+          // alignItems: "center",
+          // justifyContent: "space-between",
+          // height: "60px",
+          // width: "100%",
+          // padding: "0px 12%",
+          // transition: "all 0.5s ease",
+          // backgroundColor: '#0b2219',
+          // backdropFilter: 'blur(10px)',
           // borderottom: '1.5px solid rgba(255, 255, 255, 0.2)',
-          boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-          zIndex: 1000,
+          // boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+          // zIndex: 1000,
         }}
         >
         {/* <button

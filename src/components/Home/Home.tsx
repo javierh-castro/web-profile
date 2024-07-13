@@ -51,7 +51,7 @@ export default function Home() {
     <section className="home">
       <article className="presentation">
         <div className="titulo">
-          <h2>Javier Castro</h2>
+          <h1>Javier Castro</h1>
           <h3 className="text-animation">
             Yo soy <span></span>
           </h3>

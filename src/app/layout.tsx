@@ -6,8 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // import { NextUIProvider } from '@nextui-org/react';
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/Navbar/NavBar";
-import Background from "../components/Background/Background";
-// import background from "../../public/img/background.svg";
+// import Background from "../components/Background/Background";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -31,7 +30,6 @@ export default function RootLayout({
       </head>
       <body className={`body ${montserrat.className} antialiased`}>
       {/* <NextUIProvider> */}
-      <Background/>
         <NavBar/>
         {children}
         <Footer />

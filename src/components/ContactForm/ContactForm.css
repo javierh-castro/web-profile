@@ -1,40 +1,39 @@
 .contact {
-  height: 92vh;/*Nose si esta bien*/
+  /*height: 100vh;Nose si esta bien*/
+  width: 75vw;
+  margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0px 15%;
+}
+
+.contact h2{
+  margin: 50px 0px;
 }
 
 .format_contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 300px;
 }
 
 .description {
   width: 45%;
 }
-.description h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  margin-bottom: 40px;
-}
 
 .contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  width: 45%;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   background: var(--background2-color);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 40%;
 
-  display: flex;
-  flex-direction: column;
-  padding: 0px 2%;
-  justify-content: center;
 }
 
 .contact_form p input {
@@ -90,4 +89,17 @@
 
 .contact a {
   color: var(--color-primary);
+}
+
+
+@media (max-width: 760px) {
+  .contact {
+    width: 93vw;
+    height: auto;
+  }
+
+  .format_contact {
+    gap: 20px;
+    justify-content: flex-start;
+  }
 }
