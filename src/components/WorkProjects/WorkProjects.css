@@ -7,16 +7,17 @@
 }
 
 .projects {
+  /* border: solid red 2px; */
   display: flex;
   justify-content: center;
   padding: 0px;
   flex-wrap: wrap;
-  gap: 40px 40px;
+  gap: 40px;
 }
 
 .section {
   margin: 50px 0px;
-  width: 70vw;
+  /* width: 70vw; */
 }
 
 .section h1 {
@@ -28,14 +29,13 @@
   flex-direction: column;
   justify-content: space-between;
   font-size: 14px;
-  /* position: relative; */
   border-radius: 20px;
   padding: 20px 25px;
   border: 2px solid black;
   transition: all 0.4s;
   backdrop-filter: blur(30px);
   background-color: rgba(217, 217, 217, 0.184);
-  width: 400px;
+  width: 451px;
 }
 
 .project:hover {
@@ -43,6 +43,7 @@
 }
 
 .offer {
+  width: 100%;
   font-weight: 800;
   border-bottom: 2px solid black;
   cursor: pointer;
@@ -50,6 +51,7 @@
 }
 
 .project:hover .offer {
+  width: 100%;
   color: #007200;
   border-color: #007200;
 }
@@ -66,33 +68,36 @@
   object-fit: contain;
 }
 
+
+.description {
+  width: 100%;
+  /* border: solid red 2px; */
+}
+
 .description h2 {
   color: var(--main-color);
 }
 
 .project ul a {
   --color: #00a97f;
-  --color2: rgb(10, 25, 30);
-  padding: 0.8em 1.75em;
+  padding: 0.3em 1em;
   background-color: transparent;
   border-radius: 6px;
   border: 0.3px solid var(--color);
   transition: 0.5s;
   margin: 0px 10px;
-  /* border: 2px solid var(--background-color); */
   cursor: pointer;
-  font-size: 14px;
-  color: var(--background-color);
+  font-size: 20px;
+  color: var(--color);
   
 }
 
 .project ul {
-  /* margin-top: 30px; */
   padding-left: 0px;
 }
 .project ul a:hover {
   
-  background-color: var(--background-color);
+  background-color: var(--color);
   color: #0f0909;
 }
 

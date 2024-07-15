@@ -1,84 +1,7 @@
-.footer-top {
-  background: var(--gunmetal);
-  padding-block: var(--section-padding);
-  color: var(--gainsboro);
-}
-
-.footer-text {
-  font-size: var(--fs-5);
-  line-height: 1.7;
-}
-
-.footer-contact {
-  margin-bottom: 30px;
-}
-
-.contact-title {
-  position: relative;
-  font-family: var(--ff-montserrat);
-  font-weight: var(--fw-500);
-  margin-bottom: 30px;
-}
-
-.contact-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: hsl(74.77deg 57% 51%);
-}
-
-.contact-text {
-  font-size: var(--fs-5);
-  margin-bottom: 15px;
-  max-width: 200px;
-}
-
-.contact-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.contact-item ion-icon {
-  --ionicon-stroke-width: 40px;
-}
-
-.contact-link,
-address {
-  font-style: normal;
-  color: var(--gainsboro);
-  font-size: var(--fs-5);
-}
-
-.contact-link:is(:hover, :focus) {
-  color: var(--white);
-}
-
-.form-text {
-  font-size: var(--fs-5);
-  margin-bottom: 20px;
-}
-
-.footer-form .input-field {
-  background: var(--white);
-  font-size: var(--fs-5);
-  padding: 15px 20px;
-  border-radius: 100px;
-  margin-bottom: 10px;
-}
-
-.footer-form .btn {
-  width: 100%;
-}
-
-.footer-bottom {
+.footer {
   --gunmetal: hsl(205, 36%, 17%);
   background: var(--gunmetal);
+  margin-top: 100px;
   padding-block: 20px;
   text-align: center;
 }
@@ -90,7 +13,7 @@ address {
 }
 
 .copyright a {
-  color: inherit;
+  color: var(--color-primary);
   display: inline-block;
 }
 
@@ -127,4 +50,16 @@ address {
 
 .footer-bottom-link:is(:hover, :focus) {
   color: var(--white);
+}
+
+
+.links_description{
+  /* display: flex; */
+  gap: 10px;
+  font-size: 25px;
+}
+
+.links_description a {
+  margin: 10px;
+  color: var(--color-primary);
 }

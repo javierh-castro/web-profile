@@ -89,7 +89,7 @@ function NavBar() {
         >
           <i className="bi bi-list"></i>
         </button> */}
-        <Image className="logo" src="/img/Logo.png" alt="logo de perfil" width={50} height={50}/>
+        <Image className="logo" src="/img/Logo2.png" alt="logo de perfil" width={50} height={50}/>
         <ul className="nav_links">
           {links.map((link) => (
             <li key={link.name}>

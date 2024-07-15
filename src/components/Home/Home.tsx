@@ -49,6 +49,7 @@ export default function Home() {
 
   return (
     <section className="home">
+      <div className="head">
       <article className="presentation">
         <div className="titulo">
           <h1>Javier Castro</h1>
@@ -123,6 +124,19 @@ export default function Home() {
             <SiNestjs size={70} color="#E0234E" />
           </div>
         </div>
+      </article>
+      </div>
+      <article>
+        <h1>Sobre mí</h1>
+        <p>
+        La tecnología ha sido una pasión desde que era niño. Me encantaban mis primeros encuentros con computadoras, el descubrimiento de cómo funcionaban los programas y las aplicaciones, y la manera en que interactuaban entre sí. Así, apenas siendo un niño, supe que la computación sería algo que me atraería en los años posteriores.
+        </p>
+        <p>
+        Al crecer, mi pasión por la tecnología se volvió cada vez más fuerte. Empecé a explorar la arquitectura y los detalles técnicos, desde la simulación por computadoras hasta la configuración de hardware. Pasaba horas desmantelando y ensamblando computadoras, intentando averiguar cada componente diferente y su propósito.
+        </p>
+        <p>
+        Se convirtió en la motivación para mi educación y aprendí sobre problemas informáticos más complicados como la programación y la creación de software. Pude trabajar en varios proyectos y aplicar y desarrollar mi conocimiento en esta área. Cada uno de ellos es un nuevo desafío y una opción de crecimiento como persona y profesional. Espero que en el futuro pueda seguir mi carrera joven y emocionante, adquirir nuevas habilidades y, con suerte, deber una diferencia usando mi conocimiento y habilidades.
+        </p>
       </article>
     </section>
   );

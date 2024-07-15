@@ -80,25 +80,6 @@ function ContactForm() {
             sociales. ¡Espero tu mensaje!
           </p>
           <br />
-          <div>
-            <a
-              href="https://github.com/javierh-castro/mi_pagina_web"
-              target="_blank"
-              className="bi bi-github"
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/javierhcc"
-              target="_blank"
-              className="bi bi-linkedin"
-            ></a>
-          </div>
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          ></svg>
         </article>
       </div>
     </section>
