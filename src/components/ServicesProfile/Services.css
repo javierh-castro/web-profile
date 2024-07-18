@@ -1,13 +1,15 @@
 .ServicesProfile {
-  height: 66.6vh;
+  min-height: 66.6vh;
   width: 75vw;
   margin: auto;
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   flex-direction: column;
 }
 
 .cards-container {
+  margin-top: 30px;
   display: grid;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
@@ -15,19 +17,15 @@
 }
 
 .card {
-  /* position: relative; */
-  /* width: 280px; */
   font-size: 0.9rem;
-  height: 500px;
+  max-height: 700px;
   background: linear-gradient(#fff2, transparent);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   transition: 0.5s;
   border-radius: 10px;
-  /* margin: 0 -45px; */
   backdrop-filter: blur(10px);
   transform: rotate(calc(var(--r) * 1deg));
   padding: 15px;
@@ -53,20 +51,18 @@
 @media (max-width: 1015px) {
 
   .cards-container {
-    margin-top: 100px;
-    /* border: 2px solid red; */
+    margin-top: 30px;
   }
   
   .card {
-    height: 600px;
+    height: 550px;
     font-size: 0.7rem;
   }
 }
 
 @media (max-width: 760px) {
   .ServicesProfile {
-    height: auto;
-    height: 73.3vh;
+    min-height: 73.3vh;
     width: 93vw;
   }
   
@@ -75,7 +71,12 @@
   }
   
   .card {
-    /* font-size: 0.8rem; */
-    height: 500px;
+    height: 30%;
+    padding: 5px;
   }
+  
+  .card img{
+    height: 100px;
+  }
+  
 }

@@ -93,13 +93,24 @@
 
 
 @media (max-width: 760px) {
-  .contact {
-    width: 93vw;
-    height: auto;
-  }
-
   .format_contact {
     gap: 20px;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact {
+    width: 93vw;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .contact_form {
+    width: 300px;
+  }
+
+  .description{
+    width: 300px;
   }
 }

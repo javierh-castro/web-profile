@@ -8,19 +8,11 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import { usePathname } from "next/navigation";
 
 export default function NavBarResponsive() {
-  // const menuItems = [
-  //   "Home",
-  //   "Servicios",
-  //   "Proyectos",
-  //   "Habilidades",
-  //   "Salir",
-  // ];
   let pathname = usePathname();
   const menuItems = [
     { name: "Home", href: "/" },
@@ -30,7 +22,7 @@ export default function NavBarResponsive() {
   ];
 
   return (
-    <Navbar disableAnimation isBordered className="bg-gray-100 shadow-lg fixed w-full top-0 z-50">
+    <Navbar disableAnimation isBordered className="bg-blue-500 bg-opacity-50">
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
@@ -53,7 +45,7 @@ export default function NavBarResponsive() {
         </NavbarItem>
       </NavbarContent> */}
 
-      <NavbarMenu>
+      <NavbarMenu className="bg-blue-500 bg-opacity-50">
         {menuItems.map((link, index) => (
           <NavbarMenuItem key={`${link}-${index}`}>
             <Link

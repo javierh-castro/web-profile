@@ -126,7 +126,7 @@ export default function Home() {
         </div>
       </article>
       </div>
-      <article>
+      <article className="history">
         <h1>Sobre mí</h1>
         <p>
         La tecnología ha sido una pasión desde que era niño. Me encantaban mis primeros encuentros con computadoras, el descubrimiento de cómo funcionaban los programas y las aplicaciones, y la manera en que interactuaban entre sí. Así, apenas siendo un niño, supe que la computación sería algo que me atraería en los años posteriores.

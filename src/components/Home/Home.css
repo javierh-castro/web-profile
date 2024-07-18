@@ -283,15 +283,15 @@
     /* flex-wrap: wrap; */
     /* z-index: -3; */
   }
-
+  
   /*-------------------Portafolio-------------------*/
   .presentation {
-    height: 530px;
+    /* margin-top: 60px; */
     flex-direction: column;
   }
 
   .titulo {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 100%;
   }
 
@@ -308,5 +308,9 @@
 
   .text-animation span::after {
     height: 28px;
+  }
+
+  .history{
+    margin: 50px 0px;
   }
 }

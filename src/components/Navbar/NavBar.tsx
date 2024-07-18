@@ -65,30 +65,8 @@ function NavBar() {
       <nav
         className="nav nav-menu_visible"
         style={{
-          // position: "sticky",
-          // top: 0,
-          // display: "flex",
-          // alignItems: "center",
-          // justifyContent: "space-between",
-          // height: "60px",
-          // width: "100%",
-          // padding: "0px 12%",
-          // transition: "all 0.5s ease",
-          // backgroundColor: '#0b2219',
-          // backdropFilter: 'blur(10px)',
-          // borderottom: '1.5px solid rgba(255, 255, 255, 0.2)',
-          // boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-          // zIndex: 1000,
         }}
         >
-        {/* <button
-        // background: `#283d3b`,
-          className="nav-toggle"
-          aria-label={menuVisible ? "Cerrar menú" : "Abrir menú"}
-          onClick={handleToggle}
-        >
-          <i className="bi bi-list"></i>
-        </button> */}
         <Image className="logo" src="/img/Logo2.png" alt="logo de perfil" width={50} height={50}/>
         <ul className="nav_links">
           {links.map((link) => (

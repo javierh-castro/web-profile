@@ -71,15 +71,12 @@ function ContactForm() {
         <article className="description">
           <h4>DIRECCIÓN:</h4>
           <p>Mendoza, Argentina</p>
-          <br />
           <h4>EMAIL:</h4>
           <p>javiercastrohernan@gmail.com</p>
-          <br />
           <p>
             Puedes contactarme enviando un mail o a través de mis redes
             sociales. ¡Espero tu mensaje!
           </p>
-          <br />
         </article>
       </div>
     </section>
