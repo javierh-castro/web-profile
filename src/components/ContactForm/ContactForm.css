@@ -41,7 +41,7 @@
   border: 0;
   outline: none;
   background: transparent;
-  border-bottom: 1px solid var(--background-color);
+  border-bottom: 1px solid var(--color-third);
   color: var(--color-second);
   padding: 3px;
 }
@@ -51,7 +51,7 @@
   border: 0;
   outline: none;
   background: transparent;
-  border-bottom: 1px solid var(--background-color);
+  border-bottom: 1px solid var(--color-third);
   color: var(--color-second);
   padding: 3px;
 }
@@ -98,6 +98,8 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    /* border: 2px solid red; */
+    /* width: 100%; */
   }
 
   .contact {
@@ -107,10 +109,10 @@
   }
 
   .contact_form {
-    width: 300px;
+    width: 100%;
   }
 
   .description{
-    width: 300px;
+    width: 100%;
   }
 }

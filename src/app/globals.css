@@ -7,7 +7,7 @@
   --color-primary: #fff;
   --color-second: #fff;
   --main-color: #ccff33;
-  --background-color: #ccff33;
+  --color-third: #00a97f;
   --background2-color: rgba(255, 255, 255, 0.1);
   --bg-color: #081c15;
   /* color: #f1ebeb; */
@@ -51,4 +51,11 @@ html {
   /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
+}
+
+h1{
+  /* border: 2px solid #fff; */
+  margin: 30px 0px !important;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
 }

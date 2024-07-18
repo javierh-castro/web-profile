@@ -12,7 +12,7 @@ function ContactForm() {
 
   return (
     <section id="contact" className="contact">
-      <h2>Contacto</h2>
+      <h1>Contacto</h1>
       <div className="format_contact">
         <form
           className="contact_form"

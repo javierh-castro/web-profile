@@ -5,10 +5,10 @@ import Image from "next/image";
 function ServicesProfile() {
   return (
     <section className="ServicesProfile">
+      <h1>Servicios</h1>
       <ul className="cards-container">
         <div className="card">
           <Image src="/img/diseño.jpg" alt="diseño" width={500} height={300} />
-          {/* <img src="/img/diseño.jpg" alt="" /> */}
           <aside>
             <h3>Diseño</h3>
             <p>

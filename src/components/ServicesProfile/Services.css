@@ -4,12 +4,11 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-direction: column;
 }
 
 .cards-container {
-  margin-top: 30px;
   display: grid;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
@@ -66,17 +65,19 @@
     width: 93vw;
   }
   
+  
   .cards-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .card {
-    height: 30%;
-    padding: 5px;
+    height: 400px;
   }
   
   .card img{
-    height: 100px;
+    /* height: 100px; */
   }
   
 }

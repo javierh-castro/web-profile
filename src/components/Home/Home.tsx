@@ -52,7 +52,7 @@ export default function Home() {
       <div className="head">
       <article className="presentation">
         <div className="titulo">
-          <h1>Javier Castro</h1>
+          <h2>Javier Castro</h2>
           <h3 className="text-animation">
             Yo soy <span></span>
           </h3>
@@ -88,13 +88,16 @@ export default function Home() {
           <h2 className="text-md font-regular uppercase text-gray-500 dark:text-white mb-4">
             Últimos proyectos:
           </h2>
-          <div className="flex flex-col gap-y-4 ">
             <div className="[&>div]:hover:bg-pink-300 [&>div]:dark:hover:bg-cyan-600">
               <a target="_blank" className="text-xl" href="https:/">
                 Clima en React
               </a>
-              <div className="dark:bg-slate-800 bg-slate-200 h-0.5 w-full my-4"></div>
-            </div>
+              
+              <div className="dark:bg-slate-800 bg-slate-200 h-0.5 w-full my-4">
+              <a target="_blank" className="text-xl" href="https:/">
+                Tic Tac Toe
+              </a>
+              </div>
           </div>
         </div>
       </article>
@@ -127,15 +130,18 @@ export default function Home() {
       </article>
       </div>
       <article className="history">
-        <h1>Sobre mí</h1>
+        <h2>Sobre mí</h2>
         <p>
-        La tecnología ha sido una pasión desde que era niño. Me encantaban mis primeros encuentros con computadoras, el descubrimiento de cómo funcionaban los programas y las aplicaciones, y la manera en que interactuaban entre sí. Así, apenas siendo un niño, supe que la computación sería algo que me atraería en los años posteriores.
+        Desde niño, la tecnología ha sido mi pasión. Mis primeros encuentros con computadoras y la fascinación por cómo funcionaban los programas me guiaron hacia la computación.
         </p>
         <p>
-        Al crecer, mi pasión por la tecnología se volvió cada vez más fuerte. Empecé a explorar la arquitectura y los detalles técnicos, desde la simulación por computadoras hasta la configuración de hardware. Pasaba horas desmantelando y ensamblando computadoras, intentando averiguar cada componente diferente y su propósito.
+        Con el tiempo, mi interés creció y comencé a explorar la arquitectura y los detalles técnicos, desde la simulación por computadora hasta la configuración de hardware. Pasaba horas desmantelando y ensamblando computadoras, entendiendo el propósito de cada componente.
         </p>
         <p>
-        Se convirtió en la motivación para mi educación y aprendí sobre problemas informáticos más complicados como la programación y la creación de software. Pude trabajar en varios proyectos y aplicar y desarrollar mi conocimiento en esta área. Cada uno de ellos es un nuevo desafío y una opción de crecimiento como persona y profesional. Espero que en el futuro pueda seguir mi carrera joven y emocionante, adquirir nuevas habilidades y, con suerte, deber una diferencia usando mi conocimiento y habilidades.
+        Esta pasión me llevó a estudiar programación y creación de software. He trabajado en diversos proyectos, aplicando y ampliando mis conocimientos. Cada proyecto es un nuevo desafío y una oportunidad para crecer personal y profesionalmente.
+        </p>
+        <p>
+        Espero seguir desarrollando mi carrera, adquiriendo nuevas habilidades y contribuyendo con mi conocimiento y experiencia.
         </p>
       </article>
     </section>

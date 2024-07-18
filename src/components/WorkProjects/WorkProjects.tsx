@@ -4,10 +4,7 @@ import Image from "next/image";
 export default function WorkProjects() {
   return (
     <section className="work-projects">
-      <div className="section">
       <h1>Portafolio</h1>
-      <p>Aquí encontrarás una selección de mis proyectos, que demuestran mis habilidades y experiencia en desarrollo frontend. Desde la creación de interfaces de usuario interactivas hasta la implementación de componentes reutilizables, me enorgullece compartir el trabajo que he realizado.</p>
-      </div>
       <ul className="projects">
           <li className="project">
             <div className="description">

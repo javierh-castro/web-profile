@@ -9,28 +9,22 @@ export default function MySkills() {
             <h1 className="responsive section">Habilidades</h1>
             {/* <h1 className="section">Habilidades</h1> */}
             <ul className="text-separation">
-              <li>
                 <p>
                   Poseo sólidos conocimientos y experiencia en desarrollo de
                   software, destacándome en la creación de aplicaciones
                   innovadoras y eficientes. Mi destreza incluye programación en
                   varios lenguajes y resolución de problemas.
                 </p>
-              </li>
-              <li>
                 <p>
                   Estoy encantado de tener la oportunidad de discutir cómo mis
                   habilidades y experiencia que puedan contribuir al éxito de sus
                   proyecto.
                 </p>
-              </li>
-              <li>
                 <p>
                   Siempre estoy en la búsqueda de mejorar mis habilidades y la
                   adaptación constante a las nuevas tendencias y tecnologías del
                   campo.
                 </p>
-              </li>
             </ul>
           </article>
           <article className="habilidades">
