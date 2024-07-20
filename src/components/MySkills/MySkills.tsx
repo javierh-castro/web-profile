@@ -6,9 +6,6 @@ export default function MySkills() {
         <h1 className="no-responsive section">Habilidades</h1>
         <div className="format">
           <article className="skills-text">
-            <h1 className="responsive section">Habilidades</h1>
-            {/* <h1 className="section">Habilidades</h1> */}
-            <ul className="text-separation">
                 <p>
                   Poseo sólidos conocimientos y experiencia en desarrollo de
                   software, destacándome en la creación de aplicaciones
@@ -25,7 +22,6 @@ export default function MySkills() {
                   adaptación constante a las nuevas tendencias y tecnologías del
                   campo.
                 </p>
-            </ul>
           </article>
           <article className="habilidades">
             <ul className="skills-list">

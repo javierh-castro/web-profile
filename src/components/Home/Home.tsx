@@ -124,7 +124,7 @@ export default function Home() {
             <SiMysql size={70} />
             <SiZod size={70} />
             <RiNextjsLine size={70} />
-            <SiNestjs size={70} color="#E0234E" />
+            <SiNestjs size={70} />
           </div>
         </div>
       </article>

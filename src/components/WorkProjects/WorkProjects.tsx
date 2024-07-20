@@ -6,53 +6,81 @@ export default function WorkProjects() {
     <section className="work-projects">
       <h1>Portafolio</h1>
       <ul className="projects">
-          <li className="project">
-            <div className="description">
+        <li className="project">
+          <Image
+            src="/img/buscarclima.png"
+            alt="proyecto task"
+            width={500}
+            height={300}
+          />
+          <div className="container-project">
+            <div className="description-project">
+              <h4 className="offer">Buscar clima</h4>
+              <p>
+                Este proyecto podes localizar en tiempo real la temperatura
+                que tiene esa ubicación.
+              </p>
+            </div>
+            <ul className="url-links">
+              <a
+                href="https://github.com/javierh-castro/clima-react"
+                target="_blank"
+                className="bi bi-github"
+              ></a>
+              <a
+                href="https://cheery-cat-44c418.netlify.app/"
+                target="_blank"
+                className="bi bi-link"
+              ></a>
+            </ul>
+          </div>
+        </li>
+        <li className="project">
+          <Image
+            src="/img/recipify.png"
+            alt="proyecto crud"
+            width={500}
+            height={300}
+          />
+          <div className="container-project">
+            <div className="description-project">
               <h4 className="offer">Recipify</h4>
               <p>
-                En este proyecto echo en equipo basado en next.js, es una web
-                donde te registras y buscas recetas de cocina también podes
+                Es un proyecto construido en equipo de desarrolladores basado en next.js, en la web
+                podes registrar y buscas recetas de cocina también podes
                 publicar tus recetas en la web
               </p>
             </div>
-            <figure className="figure">
-              <Image
-                src="/img/recipify.png"
-                alt="proyecto crud"
-                width={500}
-                height={300}
-              />
-              <ul>
-                <a
-                  href="https://github.com/javierh-castro/proyect-recipify"
-                  target="_blank"
-                  className="bi-github"
-                >
-                </a>
-                <a
-                  href="https://recipify-rho.vercel.app/recetas"
-                  target="_blank"
-                  className="bi bi-link"
-                ></a>
-              </ul>
-            </figure>
-          </li>
-        <li className="project">
-          <div className="description">
-            <h4 className="offer">Un e-commerce web</h4>
-            <p>
-              Es un commerce con react donde podes filtrar por precio y
-              categoría y tiene una carrito de compra.
-            </p>
+            <ul className="url-links">
+              <a
+                href="https://github.com/javierh-castro/proyect-recipify"
+                target="_blank"
+                className="bi-github"
+              ></a>
+              <a
+                href="https://recipify-rho.vercel.app/recetas"
+                target="_blank"
+                className="bi bi-link"
+              ></a>
+            </ul>
           </div>
-          <figure className="figure">
+        </li>
+        <li className="project">
           <Image
-                src="/img/commerce.png"
-                alt="proyecto ecommerce"
-                width={500}
-                height={300}
-              />
-            <ul>
+            src="/img/commerce.png"
+            alt="proyecto ecommerce"
+            width={500}
+            height={300}
+          />
+          <div className="container-project">
+            <div className="description-project">
+              <h4 className="offer">Un e-commerce web</h4>
+              <p>
+                Es un commerce con react donde podes filtrar por precio y
+                categoría y tiene una carrito de compra.
+              </p>
+            </div>
+            <ul className="url-links">
               <a
                 href="https://github.com/javierh-castro/proyect-ecommerce/tree/master"
                 target="_blank"
@@ -66,25 +94,25 @@ export default function WorkProjects() {
                 {" "}
               </a>
             </ul>
-          </figure>
+          </div>
         </li>
 
         <li className="project">
-          <div className="description">
-            <h4 className="offer">Control financiero</h4>
-            <p>
-              Ayuda a tener un balance financiero y también genera un registro
-              de gastos e ingresos.
-            </p>
-          </div>
-          <figure className="figure">
-            <Image
-                src="/img/income expenses.png"
-                alt="proyecto expenses"
-                width={500}
-                height={300}
-              />
-            <ul>
+          <Image
+            src="/img/income expenses.png"
+            alt="proyecto expenses"
+            width={500}
+            height={300}
+          />
+          <div className="container-project">
+            <div className="description-project">
+              <h4 className="offer">Control financiero</h4>
+              <p>
+                Ayuda a tener un balance financiero y también genera un registro
+                de gastos e ingresos.
+              </p>
+            </div>
+            <ul className="url-links">
               <a
                 href="https://github.com/javierh-castro/Income-and-Expenses"
                 target="_blank"
@@ -96,21 +124,21 @@ export default function WorkProjects() {
                 className="bi bi-link"
               ></a>
             </ul>
-          </figure>
+          </div>
         </li>
         <li className="project">
-          <div className="description">
-            <h4 className="offer">Tic Tac Toe</h4>
-            <p>Se trata del juego tic tac toe y esta basado en react.</p>
-          </div>
-          <figure className="figure">
-            <Image
-                src="/img/recipify.png"
-                alt="proyecto tic tac toe"
-                width={500}
-                height={300}
-              />
-            <ul>
+          <Image
+            src="/img/tic tac toe.png"
+            alt="proyecto tic tac toe"
+            width={500}
+            height={300}
+          />
+          <div className="container-project">
+            <div className="description-project">
+              <h4 className="offer">Tic Tac Toe</h4>
+              <p>Se trata del juego tic tac toe y esta basado en react.</p>
+            </div>
+            <ul className="url-links">
               <a
                 href="https://github.com/javierh-castro/tic-tac-toe"
                 target="_blank"
@@ -122,53 +150,24 @@ export default function WorkProjects() {
                 className="bi bi-link"
               ></a>
             </ul>
-          </figure>
+          </div>
         </li>
         <li className="project">
-          <div className="description">
-            <h4 className="offer">Organizador de tareas</h4>
-            <p>
-              Este proyecto es para organizar las tareas que tenes pendientes y
-              estas por hacer.
-            </p>
-          </div>
-          <figure className="figure">
-            <Image
-                src="/img/task.png"
-                alt="proyecto task"
-                width={500}
-                height={300}
-              />
-            <ul>
-              <a
-                href="https://github.com/javierh-castro/React-task-control-example"
-                target="_blank"
-                className="bi bi-github"
-              ></a>
-              <a
-                href="https://javierh-castro.github.io/React-task-control-example/"
-                target="_blank"
-                className="bi bi-link"
-              ></a>
-            </ul>
-          </figure>
-        </li>
-        <li className="project">
-          <div className="description">
-            <h4 className="offer">Crud de usuarios</h4>
-            <p>
-              El proyecto muestra un crud de usuarios y también se puede
-              organizar los usuarios según su categorías.
-            </p>
-          </div>
-          <figure className="figure">
-            <Image
-                src="/img/crud 2.png"
-                alt="proyecto task"
-                width={500}
-                height={300}
-              />
-            <ul>
+          <Image
+            src="/img/crud 2.png"
+            alt="proyecto task"
+            width={500}
+            height={300}
+          />
+          <div className="container-project">
+            <div className="description-project">
+              <h4 className="offer">Crud de usuarios</h4>
+              <p>
+                El proyecto muestra un crud de usuarios y también se puede
+                organizar los usuarios según su categorías.
+              </p>
+            </div>
+            <ul className="url-links">
               <a
                 href="https://github.com/javierh-castro/CRUD-2"
                 target="_blank"
@@ -180,7 +179,7 @@ export default function WorkProjects() {
                 className="bi bi-link"
               ></a>
             </ul>
-          </figure>
+          </div>
         </li>
       </ul>
     </section>

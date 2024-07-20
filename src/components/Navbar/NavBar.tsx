@@ -20,10 +20,6 @@ const links = [
 function NavBar() {
   let pathname = usePathname();
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
-  const [backgroundTransparacy, setBackgroundTransparacy] = useState<number>(0);
-  const [padding, setPadding] = useState<number>(30);
-  const [boxShadow, setBoxShadow] = useState<number>(0);
-  const [menuVisible, setMenuVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,26 +32,6 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    let backgroundTransparacyVar = clientWindowHeight / 600;
-
-    if (backgroundTransparacyVar < 1) {
-      let paddingVar = 30 - backgroundTransparacyVar * 20;
-      let boxShadowVar = backgroundTransparacyVar * 0.1;
-      setBackgroundTransparacy(backgroundTransparacyVar);
-      setPadding(paddingVar);
-      setBoxShadow(boxShadowVar);
-    }
-  }, [clientWindowHeight]);
-
-  //Control de menu responsive
-  // const handleToggle = () => {
-  //   setMenuVisible((prevMenuVisible) => !prevMenuVisible);
-  // };
-
-  const handleMenuItemClick = () => {
-    setMenuVisible(false); // Cierra el menú al hacer clic en un elemento de navegación
-  };
 
   return (
     <>
@@ -79,7 +55,9 @@ function NavBar() {
             </li>
           ))}
         </ul>
+        <div className="hidden">
         <ButtonIdioma />
+        </div>
       </nav>
     </>
   );

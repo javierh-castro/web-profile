@@ -21,37 +21,6 @@
   color: var(--white);
 }
 
-.footer-bottom-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-}
-
-.footer-bottom-list > li {
-  position: relative;
-}
-
-.footer-bottom-list > li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  bottom: 3px;
-  width: 1px;
-  background: hsla(0, 0%, 100%, 0.2);
-}
-
-.footer-bottom-link {
-  color: var(--gainsboro);
-  font-size: var(--fs-7);
-  transition: var(--transition);
-}
-
-.footer-bottom-link:is(:hover, :focus) {
-  color: var(--white);
-}
-
 
 .links_description{
   /* display: flex; */

@@ -159,7 +159,6 @@
 }
 
 .linkedin:hover {
-  /* background-color: #2374c4; */
   box-shadow: 0px 15px 20px rgba(46, 153, 229, 0.4);
   transform: translateY(-7px);
 }

@@ -14,27 +14,9 @@
   gap: 40px;
 }
 
-.section h1 {
-  text-align: center;
-}
-
-/* .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 14px;
-  border-radius: 20px;
-  padding: 20px 25px;
-  border: 2px solid black;
-  transition: all 0.4s;
-  backdrop-filter: blur(30px);
-  background-color: rgba(217, 217, 217, 0.184);
-  width: 451px;
-} */
-
 .project {
   width: 451px;
-  background-color: rgb(45, 10, 7);
+  min-height: 480px;
   background: linear-gradient(to top right, rgb(7, 45, 40), rgb(58, 84, 77));
   background: -webkit-linear-gradient(
     to top right,
@@ -43,12 +25,11 @@
   );
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 12px;
   border-radius: 20px;
   border: 1px solid rgb(84 90 106);
-  transition: all 0.3s;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .project:hover {
@@ -63,60 +44,71 @@
   transition: all 0.4s;
 }
 
+.container-project{
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 
+.description-project {
+  width: 100%;
+} */
+
+/* .description-project h4 {
+  color: var(--main-color);
+} */
+
 .project:hover .offer {
   width: 100%;
   color: #40916c;
   border-color: #40916c;
 }
 
-.figure {
-  gap: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.figure img {
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.description {
+.project img {
+  height: 50%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.description h2 {
-  color: var(--main-color);
+.url-links {
+  padding-left: 0px;
+  display: flex;
+  gap: 10px;
 }
 
-.project ul a {
+.url-links a {
   padding: 0.3em 1em;
   background-color: transparent;
   border-radius: 6px;
   border: 0.3px solid var(--color-third);
-  transition: 0.5s;
-  margin: 0px 10px;
+  transition: all 0.5s;
+  /* margin: 0px 10px; */
   cursor: pointer;
   font-size: 20px;
   color: var(--color-third);
 }
 
-.project ul {
-  padding-left: 0px;
-}
-.project ul a:hover {
+.url-links a:hover {
   background-color: var(--color-third);
   color: #0f0909;
 }
 
 @media (max-width: 1015px) {
   .work-projects {
+    width: 90vw;
     margin: auto;
-    width: 95vw;
   }
 
   .project {
+    height: 500px;
+    padding: 20px;
     width: 350px;
+  }
+
+  .project img {
+    height: 60%;
   }
 }
 
