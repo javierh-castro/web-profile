@@ -7,14 +7,13 @@
   gap: 100px;
 }
 
-.head{
+.head {
   height: 78vh;
   flex-direction: column;
   display: flex;
   justify-content: center;
   /* border: 2px solid red; */
 }
-
 
 .presentation {
   display: flex;
@@ -38,6 +37,17 @@
   width: 40%;
 }
 
+.blur {
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+  /* position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem; */
+}
+
 /*-----Escritura-automatica----------*/
 .text-animation {
   font-size: 2.5rem;
@@ -55,12 +65,12 @@
 }
 .text-animation span::after {
   content: "";
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   position: absolute;
   width: calc(100% + 8px);
 
   height: 3rem;
-  border-left: 3px solid var(--bg-color);
+  border-left: 3px solid var(--background-color);
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
@@ -268,7 +278,7 @@
     /* flex-wrap: wrap; */
     /* z-index: -3; */
   }
-  
+
   /*-------------------Portafolio-------------------*/
   .presentation {
     /* margin-top: 60px; */
@@ -299,20 +309,20 @@
     animation: scroll var(--_animation-duration, 40s)
       var(--_animation-direction, forwards) linear infinite;
   }
-  
+
   .scroller__inner {
     gap: 2rem;
   }
 
-  .history{
+  .history {
     margin: 50px 0px;
   }
 
-  .links-perfil{
+  .links-perfil {
     margin: 50px 0px;
   }
 
-  .latest_projects{
+  .latest_projects {
     display: none;
   }
 }
