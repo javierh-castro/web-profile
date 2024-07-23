@@ -16,9 +16,9 @@ export default function NavBarResponsive() {
   let pathname = usePathname();
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "Servicios", href: "/ServicesPage" },
-    { name: "Proyectos", href: "/WorkProjects" },
-    { name: "Habilidades", href: "/Skills" },
+    { name: "Services", href: "/ServicesPage" },
+    { name: "Projects", href: "/WorkProjects" },
+    { name: "Skills", href: "/Skills" },
   ];
 
   return (

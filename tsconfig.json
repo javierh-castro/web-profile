@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Fonts/Fonts.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Fonts/Fonts.js", "src/components/Navbar/Button/SwitchMode.jsx"],
   "exclude": ["node_modules"]
 }
