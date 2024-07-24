@@ -6,7 +6,11 @@ import Footer from "../components/Footer/Footer";
 import NavBar from "../components/Navbar/NavBar";
 
 export const metadata = {
-  title: "Javier Castro | Backend Developer",
+  title: "Javier Castro | Developer",
+  description: 'Generate by create next app',
+  icons: {
+    icon: ["/favicon.ico?v=4"]
+  }
 };
 
 export default function RootLayout({

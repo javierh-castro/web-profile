@@ -1,14 +1,27 @@
 import './Button.css'
 import React, { useEffect, useState } from "react";
 
-function SwitchMode( {onClick}) {
+function SwitchMode() {
+  const [dark, setDark] = useState(false);
+  
+  const darkMode = () => {
+    setDark(!dark);
+  };
+
+  useEffect(() => {
+    if (dark) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [dark]);
   return (
     <label
       for="themeToggle"
       class="themeToggle st-sunMoonThemeToggleBtn"
       type="checkbox"
     >
-      <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+      <input type="checkbox" id="themeToggle" class="themeToggleInput" onClick={darkMode}/>
       <svg
         width="18"
         height="18"

@@ -1,7 +1,7 @@
 'use client'
 import { useForm, ValidationError } from "@formspree/react";
 import "./ContactForm.css";
-// import { handleType } from "../../types/index"
+// import "@/src/app/globals.css";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("signupForm"); //<handleType>

@@ -51,16 +51,16 @@ export default function Home() {
     <section className="home">
       <div className="head">
         <article className="presentation">
+          <span className="blur"></span>
           <div className="titulo">
-            <span className="blur"></span>
-            <span className="blur"></span>
             <h2>Javier Castro</h2>
             <h3 className="text-animation">
               Yo soy <span></span>
             </h3>
             <p>
-              Explora mis proyectos destacados, competencias adquiridas y logros
-              importantes que reflejan mi compromiso y pasión por mi profesión.
+              Explora mis proyectos destacados, las competencias que he
+              adquirido y los logros importantes que reflejan mi compromiso y
+              pasión por mi profesión.
             </p>
             <div className="links-perfil">
               <a
@@ -139,15 +139,17 @@ export default function Home() {
           me guiaron hacia la computación.
         </p>
         <p>
-          Con el tiempo, mi interés creció y comencé a explorar la arquitectura
-          y los detalles técnicos, desde la simulación por computadora hasta la
-          configuración de hardware. Pasaba horas desmantelando y ensamblando
-          computadoras, entendiendo el propósito de cada componente.
+          Con el tiempo, mi interés creció y comencé a explorar la{" "}
+          <span>arquitectura y los detalles técnicos</span>, desde la simulación
+          por computadora hasta la
+          <span> configuración de hardware</span>. Pasaba horas desmantelando y
+          ensamblando computadoras, entendiendo el propósito de cada componente.
         </p>
         <p>
-          Esta pasión me llevó a estudiar programación y creación de software.
-          He trabajado en diversos proyectos, aplicando y ampliando mis
-          conocimientos. Cada proyecto es un nuevo desafío y una oportunidad
+          Esta pasión me llevó a estudiar{" "}
+          <span> programación y creación de software</span> en el Instituto de
+          IES 9023. He trabajado en diversos proyectos, aplicando y ampliando
+          mis conocimientos. Cada proyecto es un nuevo desafío y una oportunidad
           para crecer personal y profesionalmente.
         </p>
         <p>

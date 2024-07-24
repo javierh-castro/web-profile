@@ -18,7 +18,6 @@ const links = [
 
 function NavBar() {
   let pathname = usePathname();
-  const [dark, setDark] = useState(false);
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
 
   useEffect(() => {
@@ -32,30 +31,19 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const darkMode = () => {
-    setDark(!dark);
-  };
-
-  useEffect(() => {
-    if (dark) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [dark]);
-
-
   return (
     <>
       <div className="NavBarResponsive">
-      <NavBarResponsive/>
+        <NavBarResponsive />
       </div>
-      <nav
-        className="nav nav-menu_visible"
-        style={{
-        }}
-        >
-        <Image className="logo" src="/img/jc.png" alt="logo de perfil" width={50} height={50}/>
+      <nav className="nav nav-menu_visible" style={{}}>
+        <Image
+          className="logo"
+          src="/img/jc.png"
+          alt="logo de perfil"
+          width={50}
+          height={50}
+        />
         <ul className="nav_links">
           {links.map((link) => (
             <li key={link.name}>
@@ -69,9 +57,9 @@ function NavBar() {
         </ul>
         <div className="flex gap-2">
           <div className="hidden">
-        <ButtonIdioma />
+            <ButtonIdioma />
           </div>
-        <SwitchMode onClick ={darkMode}/>
+          <SwitchMode/>
         </div>
       </nav>
     </>

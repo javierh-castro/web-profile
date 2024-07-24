@@ -259,6 +259,16 @@
   box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
 }
 
+.history span{
+  color: var(--color-third);
+}
+
+@media (max-width: 1050px) {
+  .text-animation {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 760px) {
   /*-------------------Home-------------------*/
   .home {
@@ -266,7 +276,6 @@
     width: 93vw;
   }
 
-  /*-------------------Portafolio-------------------*/
   .presentation {
     flex-direction: column;
   }

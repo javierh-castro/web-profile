@@ -2,61 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --color-primary: #fff;
   --color-second: #fff;
-  --main-color: #ccff33;
   --color-third: #1982c4;
+  --main-color: #ccff33;
   --background-color: #0d1b2a;
-  --background2-color: rgba(255, 255, 255, 0.1);
+  /* --background2-color: rgba(255, 255, 255, 0.1); */
+  --navbar-color: #1b263b;
+  --hover-color: #0f0909;
   /* --bg-color: #081c15; */
-
-  --github-background: none;
-  --linkedin-background: none;
-  --cv-background: none;
+  --project-1: #022b3a;
+  --project-2: #002e42;
+  --project-3: #00304a;
+  --project-4: #003251;
+  --project-5: #003459;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-* {
-  color: #f1ebeb;
-  margin: 0;
-  padding: 0; 
-}
-
 .dark-mode {
-  background-color: #f0ead2;
-  color: #090a0f;
   --color-primary: #090a0f;
   --color-second: #090a0f;
-  --bg-color: #f0ead2;
+  /* --bg-color: #f0ead2; */
   --main-color: #f77f00;
-  --background-color: #f77f00;
+  --background-color: #f0ead2;
   --background2-color: rgba(255, 216, 107, 0.479);
+  --navbar-color: #e9d985;
+  --hover-color: #fff;
 
-  --github-background: #6c757d;
+  /* --github-background: #6c757d;
   --linkedin-background: #2374c4;
-  --cv-background: #23c483;
+  --cv-background: #23c483; */
 
+  /* --color-nav: #1b263b;
+  --card-project: ad; */
+  --project-1: #d8f3dc;
+  --project-2: #d8f3dc;
+  --project-3: #d8f3dc;
+  --project-4: #d8f3dc;
+  --project-5: #d8f3dc;
+}
 
-  --color-nav: #1b263b;
-  --card-project: ad;
+* {
+  color: var(--color-primary);
+  /* color: #f1ebeb; */
+  margin: 0;
+  padding: 0;
 }
 
 .body {
-  background-color: var(--background-color);/*#081c15;*/
-  /* background: url("/img/background.svg"); */
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+  background-color: var(--background-color); /*#081c15;*/
 }
 
-h1{
-  /* border: 2px solid #fff; */
+h1 {
   margin: 30px 0px !important;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--color-primary);
   padding-bottom: 5px;
 }

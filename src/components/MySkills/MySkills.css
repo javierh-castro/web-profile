@@ -77,7 +77,7 @@
   .skills {
     width: 93vw;
     margin: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .format {
@@ -98,12 +98,12 @@
   .text-separation {
     /* display: grid; */
     /* gap: 10px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   
   .habilidades {
     width: 90%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   /* Nose porque pasa */
@@ -115,7 +115,7 @@
   }
 
   .skills-list li {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0%;
   }
 
