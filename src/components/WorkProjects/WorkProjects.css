@@ -40,7 +40,7 @@
 
 .container-project{
   margin-top: 10px;
-  height: 45%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,13 +53,21 @@
 }
 
 .project img {
-  height: 50%;
+  height:200px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .url-links {
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.urls{
   padding-left: 0px;
   display: flex;
   gap: 10px;
@@ -79,6 +87,12 @@
 .url-links a:hover {
   background-color: var(--color-second);
   color: var(--hover-color);
+}
+
+.stack {
+  display: flex;
+  gap: 15px;
+  font-size: 35px;
 }
 
 @media (max-width: 1015px) {
@@ -106,4 +120,9 @@
   .project {
     width: 100%;
   }
+
+  .project img {
+    height: 70%;
+    background-color: var(--background-color);
+  } 
 }

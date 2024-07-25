@@ -1,12 +1,19 @@
+"use client"
 import "./WorkProjects.css";
 import Image from "next/image";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiCss3, SiNodedotjs, SiZod } from "react-icons/si";
 
 export default function WorkProjects() {
+
+  const redirectToExternalPage = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="work-projects">
       <h1>Portafolio</h1>
       <ul className="projects">
-        <li className="project">
+        <li className="project" onClick={() => redirectToExternalPage('https://cheery-cat-44c418.netlify.app/')}>
           <Image
             src="/img/buscarclima.png"
             alt="Estado del tiempo"
@@ -23,16 +30,23 @@ export default function WorkProjects() {
               </p>
             </div>
             <ul className="url-links">
-              <a
-                href="https://github.com/javierh-castro/clima-react"
-                target="_blank"
-                className="bi bi-github"
-              ></a>
-              <a
-                href="https://cheery-cat-44c418.netlify.app/"
-                target="_blank"
-                className="bi bi-link"
-              ></a>
+              <ul className="urls">
+                <a
+                  href="https://github.com/javierh-castro/clima-react"
+                  target="_blank"
+                  className="bi bi-github"
+                ></a>
+                <a
+                  href="https://cheery-cat-44c418.netlify.app/"
+                  target="_blank"
+                  className="bi bi-link"
+                ></a>
+              </ul>
+              <ul className="stack">
+                <SiNextdotjs/>
+                <SiTypescript/>
+                <SiZod/>
+              </ul>
             </ul>
           </div>
         </li>
@@ -53,16 +67,23 @@ export default function WorkProjects() {
               </p>
             </div>
             <ul className="url-links">
-              <a
-                href="https://github.com/javierh-castro/proyect-recipify"
-                target="_blank"
-                className="bi-github"
-              ></a>
-              <a
-                href="https://recipify-rho.vercel.app/recetas"
-                target="_blank"
-                className="bi bi-link"
-              ></a>
+              <ul className="urls">
+                <a
+                  href="https://github.com/javierh-castro/proyect-recipify"
+                  target="_blank"
+                  className="bi-github"
+                ></a>
+                <a
+                  href="https://recipify-rho.vercel.app/recetas"
+                  target="_blank"
+                  className="bi bi-link"
+                ></a>
+              </ul>
+              <ul className="stack">
+                <SiNextdotjs />
+                <SiTypescript />
+                <SiTailwindcss/>
+              </ul>
             </ul>
           </div>
         </li>
@@ -82,18 +103,22 @@ export default function WorkProjects() {
               </p>
             </div>
             <ul className="url-links">
-              <a
-                href="https://github.com/javierh-castro/proyect-ecommerce/tree/master"
-                target="_blank"
-                className="bi bi-github"
-              ></a>
-              <a
-                href="https://ecommerce-javier.netlify.app/"
-                target="_blank"
-                className="bi bi-link"
-              >
-                {" "}
-              </a>
+              <ul className="urls">
+                <a
+                  href="https://github.com/javierh-castro/proyect-ecommerce/tree/master"
+                  target="_blank"
+                  className="bi bi-github"
+                ></a>
+                <a
+                  href="https://ecommerce-javier.netlify.app/"
+                  target="_blank"
+                  className="bi bi-link"
+                ></a>
+              </ul>
+              <ul className="stack">
+                <SiReact />
+                <SiCss3 />
+              </ul>
             </ul>
           </div>
         </li>
@@ -114,16 +139,22 @@ export default function WorkProjects() {
               </p>
             </div>
             <ul className="url-links">
-              <a
-                href="https://github.com/javierh-castro/Income-and-Expenses"
-                target="_blank"
-                className="bi bi-github"
-              ></a>
-              <a
-                href="https://income-expenses-example.netlify.app/"
-                target="_blank"
-                className="bi bi-link"
-              ></a>
+              <ul className="urls">
+                <a
+                  href="https://github.com/javierh-castro/Income-and-Expenses"
+                  target="_blank"
+                  className="bi bi-github"
+                ></a>
+                <a
+                  href="https://income-expenses-example.netlify.app/"
+                  target="_blank"
+                  className="bi bi-link"
+                ></a>
+              </ul>
+              <ul className="stack">
+                <SiReact />
+                <SiTailwindcss />
+              </ul>
             </ul>
           </div>
         </li>
@@ -143,16 +174,22 @@ export default function WorkProjects() {
               </p>
             </div>
             <ul className="url-links">
-              <a
-                href="https://github.com/javierh-castro/tic-tac-toe"
-                target="_blank"
-                className="bi bi-github"
-              ></a>
-              <a
-                href="https://javierh-castro.github.io/tic-tac-toe/"
-                target="_blank"
-                className="bi bi-link"
-              ></a>
+              <ul className="urls">
+                <a
+                  href="https://github.com/javierh-castro/tic-tac-toe"
+                  target="_blank"
+                  className="bi bi-github"
+                ></a>
+                <a
+                  href="https://javierh-castro.github.io/tic-tac-toe/"
+                  target="_blank"
+                  className="bi bi-link"
+                ></a>
+              </ul>
+              <ul className="stack">
+                <SiReact />
+                <SiCss3 />
+              </ul>
             </ul>
           </div>
         </li>
@@ -172,16 +209,22 @@ export default function WorkProjects() {
               </p>
             </div>
             <ul className="url-links">
-              <a
-                href="https://github.com/javierh-castro/CRUD-2"
-                target="_blank"
-                className="bi bi-github"
-              ></a>
-              <a
-                href="https://github.com/javierh-castro/CRUD-2"
-                target="_blank"
-                className="bi bi-link"
-              ></a>
+              <ul className="urls">
+                <a
+                  href="https://github.com/javierh-castro/CRUD-2"
+                  target="_blank"
+                  className="bi bi-github"
+                ></a>
+                <a
+                  href="https://github.com/javierh-castro/CRUD-2"
+                  target="_blank"
+                  className="bi bi-link"
+                ></a>
+              </ul>
+              <ul className="stack">
+                <SiNodedotjs />
+                <SiTypescript />
+              </ul>
             </ul>
           </div>
         </li>

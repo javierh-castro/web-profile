@@ -6,7 +6,7 @@
 
 .skills {
   min-height: 66.6vh;
-  width: 73vw;
+  width: 75vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,12 @@
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .skills-text {
-  margin-top: 15px;
   font-size: 15px;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,33 +35,31 @@
 }
 
 .skills-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 55%;
 }
 
 .skills-list {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 100%;
 }
 
-.skills-list li {
-  /* display: flex; */
-  /* align-items: center; */
-  /* text-align: center; */
-  
-  /* margin: 4%; */
-}
 
 .icon img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .icon img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -86,28 +83,16 @@
     font-size: 14px;
     width: 90%;
   }
-  
-  .text-separation {
-    /* display: grid; */
-    /* gap: 10px; */
-    /* border: 2px solid red; */
-  }
-  
+
   .skills-icon {
     width: 90%;
   }
 
-  /* Nose porque pasa */
-  .skills-list{
+  .skills-list {
     display: flex;
-    gap: 15px;
   }
 
   .skills-list li {
     margin: 0%;
-  }
-
-  .icon img {
-    height: 40px;
   }
 }
