@@ -16,8 +16,6 @@
 .format {
   margin-top: 10px;
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
   justify-content: center;
   gap: 20px;
 }
@@ -37,10 +35,11 @@
   gap: 10px;
 }
 
-.habilidades {
+.skills-icon {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
 .skills-list {
@@ -49,35 +48,29 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 0px;
 }
 
 .skills-list li {
-  margin: 4%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* text-align: center; */
+  
+  /* margin: 4%; */
 }
 
 .icon img {
+  width: 50px;
   height: 50px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media (max-width: 720px) {
   /*-------------------skills-------------------*/
 
-  /* .responsive {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    padding: 30px 0;
-  } */
-/* 
-  .no-responsive {
-    display: none;
-  } */
-
   .skills {
     width: 93vw;
     margin: auto;
-    /* border: 2px solid red; */
   }
 
   .format {
@@ -90,7 +83,6 @@
   }
 
   .skills-text {
-    /* padding: 0px 10%; */
     font-size: 14px;
     width: 90%;
   }
@@ -101,21 +93,17 @@
     /* border: 2px solid red; */
   }
   
-  .habilidades {
+  .skills-icon {
     width: 90%;
-    /* border: 2px solid red; */
   }
 
   /* Nose porque pasa */
   .skills-list{
-
-    padding-left: 0px;
     display: flex;
-    gap: 20px;
+    gap: 15px;
   }
 
   .skills-list li {
-    /* border: 2px solid red; */
     margin: 0%;
   }
 

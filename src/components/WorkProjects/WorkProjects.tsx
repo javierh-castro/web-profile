@@ -9,16 +9,17 @@ export default function WorkProjects() {
         <li className="project">
           <Image
             src="/img/buscarclima.png"
-            alt="proyecto task"
+            alt="Estado del tiempo"
             width={500}
             height={300}
           />
           <div className="container-project">
             <div className="description-project">
-              <h4 className="offer">Buscar clima</h4>
+              <h4 className="offer">Estado del tiempo</h4>
               <p>
-                Este proyecto podes localizar en tiempo real la temperatura
-                que tiene esa ubicación.
+                Consulta el tiempo de cualquier ciudad con esta aplicación
+                construida con React y TypeScript. Este proyecto también se
+                utilizo Zod para validación y esquema de datos.
               </p>
             </div>
             <ul className="url-links">
@@ -46,9 +47,9 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">Recipify</h4>
               <p>
-                Es un proyecto construido en equipo de desarrolladores basado en next.js, en la web
-                podes registrar y buscas recetas de cocina también podes
-                publicar tus recetas en la web
+                Recipefy es desarrollado junto a compañeros para la asignatura
+                de programación. La web permite registrarse, buscar recetas de
+                cocina y publicar las recetas.
               </p>
             </div>
             <ul className="url-links">
@@ -76,8 +77,8 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">Un e-commerce web</h4>
               <p>
-                Es un commerce con react donde podes filtrar por precio y
-                categoría y tiene una carrito de compra.
+                Mi primer e-commerce cuenta con un filtro por precio y
+                categoría, y dispone de un carrito de compras.
               </p>
             </div>
             <ul className="url-links">
@@ -108,8 +109,8 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">Control financiero</h4>
               <p>
-                Ayuda a tener un balance financiero y también genera un registro
-                de gastos e ingresos.
+                Organiza el balance financiero y genera un registro detallado de
+                gastos e ingresos.
               </p>
             </div>
             <ul className="url-links">
@@ -136,7 +137,10 @@ export default function WorkProjects() {
           <div className="container-project">
             <div className="description-project">
               <h4 className="offer">Tic Tac Toe</h4>
-              <p>Se trata del juego tic tac toe y esta basado en react.</p>
+              <p>
+                Juego de Tic Tac Toe desarrollado con React. Utiliza React
+                Context Provider para la gestión del estado
+              </p>
             </div>
             <ul className="url-links">
               <a
@@ -163,8 +167,8 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">Crud de usuarios</h4>
               <p>
-                El proyecto muestra un crud de usuarios y también se puede
-                organizar los usuarios según su categorías.
+                Un CRUD que muestra detalles de los usuarios y se integra con
+                una base de datos.
               </p>
             </div>
             <ul className="url-links">
