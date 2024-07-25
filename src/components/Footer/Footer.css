@@ -4,16 +4,19 @@
   margin-top: 100px;
   padding-block: 20px;
   text-align: center;
+  color: #fff;
+}
+
+.footer div {
+  color: #fff;
 }
 
 .copyright {
-  color: var(--gainsboro);
-  font-size: var(--fs-5);
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .copyright a {
-  color: var(--color-primary);
   display: inline-block;
 }
 
@@ -23,12 +26,11 @@
 
 
 .links_description{
-  /* display: flex; */
   gap: 10px;
   font-size: 25px;
 }
 
 .links_description a {
   margin: 10px;
-  color: var(--color-primary);
+  color: #fff;
 }

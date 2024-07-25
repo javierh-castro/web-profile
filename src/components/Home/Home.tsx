@@ -87,20 +87,23 @@ export default function Home() {
             </div>
           </div>
           <div className="latest_projects 1g:flex flex-col">
-            <h2 className="text-md font-regular uppercase text-gray-500 dark:text-white mb-4">
-              Últimos proyectos:
-            </h2>
-            <div className="[&>div]:hover:bg-pink-300 [&>div]:dark:hover:bg-cyan-600">
-              <a target="_blank" className="text-xl" href="https:/">
-                Clima en React
+            <h4>Últimos proyectos:</h4>
+            <ul className="flex flex-column  align-items-center">
+              <a
+                target="_blank"
+                className="text-xl"
+                href="https://cheery-cat-44c418.netlify.app"
+              >
+                Estado del tiempo
               </a>
-
-              <div className="dark:bg-slate-800 bg-slate-200 h-0.5 w-full my-4">
-                <a target="_blank" className="text-xl" href="https:/">
-                  Tic Tac Toe
-                </a>
-              </div>
-            </div>
+              <a
+                target="_blank"
+                className="text-xl"
+                href="https://github.com/javierh-castro/tic-tac-toe"
+              >
+                Tic Tac Toe
+              </a>
+            </ul>
           </div>
         </article>
         <article>

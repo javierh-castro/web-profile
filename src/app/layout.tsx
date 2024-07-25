@@ -28,11 +28,9 @@ export default function RootLayout({
         <title>{metadata.title}</title>
       </head>
       <body className={`body ${montserrat.className} antialiased`}>
-        {/* <NextUIProvider> */}
         <NavBar />
         {children}
         <Footer />
-        {/* </NextUIProvider> */}
       </body>
     </html>
   );

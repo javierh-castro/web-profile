@@ -11,7 +11,7 @@ export default function WorkProjects() {
 
   return (
     <section className="work-projects">
-      <h1>Portafolio</h1>
+      <h1>Proyectos</h1>
       <ul className="projects">
         <li className="project" onClick={() => redirectToExternalPage('https://cheery-cat-44c418.netlify.app/')}>
           <Image

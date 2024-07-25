@@ -29,10 +29,8 @@
   height: 30px;
 }
 
-/* Estilos para los elementos de la lista */
 .nav_links li {
   list-style-type: none;
-  /* border: 2px solid red; */
   text-align: center;
 }
 
@@ -58,7 +56,7 @@
   content: "";
   width: 0%;
   height: 2px;
-  background: #007200; /*#25a18e;*/
+  background: var(--color-third);/*#007200*/
   display: block;
   transition: 0.5s;
 }
@@ -72,7 +70,7 @@
   content: "";
   width: 0%;
   height: 2px;
-  background: #007200;
+  background: var(--color-third);
   display: block;
   width: 100%;
   height: 100%;
@@ -83,9 +81,6 @@
   place-items: center;
 }
 
-/* .button {
-  padding: 100px;
-} */
 
 /* Keyframes para la animación */
 @keyframes tracking-in-expand-forward-top {
@@ -114,11 +109,6 @@
   display: none;
 }
 
-
-/* .nav.active li a:hover {
-  background: #20e2d7;
-  color: #fff;
-} */
 
 @media (max-width: 810px) {
   .nav_links {

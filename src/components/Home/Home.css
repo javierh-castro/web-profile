@@ -37,9 +37,28 @@
   width: 40%;
 }
 
+.latest_projects h4{
+  font-size: 30px;
+}
+
+.latest_projects ul{
+  padding-left: 0px;
+}
+
+.latest_projects a{
+  width: 280px;
+  font-size: 20px;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-third);
+  text-decoration: none;
+}
+
+.latest_projects a:hover{
+  border-bottom: 2px solid var(--color-primary);
+}
+
 .blur {
   box-shadow: 0 0 1000px 50px #1d4ed8;
-  /* z-index: -100; */
 }
 
 /*-----Escritura-automatica----------*/
@@ -77,7 +96,7 @@
 @keyframes words {
   0%,
   20% {
-    content: "Frontend Designer";
+    content: "Frontend Developer";
   }
   21%,
   40% {
@@ -85,7 +104,7 @@
   }
   41%,
   60% {
-    content: "UI Designer";
+    content: "UI / UX Designer";
   }
   61%,
   80% {
