@@ -6,6 +6,7 @@
   --color-primary: #fff;
   --color-second: #fff;
   --color-third: #1982c4;
+  --color-border: #e8e8e870;
 
   --main-color: #ccff33;
   --background-color: #0d1b2a;
@@ -27,6 +28,7 @@ html {
   --color-primary: #090a0f;
   --color-second: #090a0f;
   --color-third: #f77f00;
+  --color-border: #5c5c5c70;
 
   --main-color: #f77f00;
   --background-color: #f0ead2;

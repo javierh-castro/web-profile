@@ -16,6 +16,11 @@ function Footer() {
               target="_blank"
               className="bi bi-linkedin"
             ></a>
+            <a
+              href="mailto:javiercastrohernan@gmail.com"
+              target="_blank"
+              className="bi bi-envelope"
+            ></a>
           </div>
       </div>
       <div className="footer-bottom">

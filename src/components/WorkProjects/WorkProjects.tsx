@@ -13,12 +13,14 @@ export default function WorkProjects() {
     <section className="work-projects">
       <h1>Proyectos</h1>
       <ul className="projects">
-        <li className="project" onClick={() => redirectToExternalPage('https://cheery-cat-44c418.netlify.app/')}>
+        <li className="project">
           <Image
             src="/img/buscarclima.png"
             alt="Estado del tiempo"
             width={500}
             height={300}
+            onClick={() => redirectToExternalPage('https://cheery-cat-44c418.netlify.app/')}
+            className="cursor-pointer"
           />
           <div className="container-project">
             <div className="description-project">
@@ -53,15 +55,17 @@ export default function WorkProjects() {
         <li className="project">
           <Image
             src="/img/recipify.png"
-            alt="proyecto crud"
+            alt="Recipify"
             width={500}
             height={300}
+            onClick={() => redirectToExternalPage('https://recipify-rho.vercel.app/recetas')}
+            className="cursor-pointer"
           />
           <div className="container-project">
             <div className="description-project">
               <h4 className="offer">Recipify</h4>
               <p>
-                Recipefy es desarrollado junto a compañeros para la asignatura
+                Recipify es desarrollado junto a compañeros para la asignatura
                 de programación. La web permite registrarse, buscar recetas de
                 cocina y publicar las recetas.
               </p>
@@ -90,13 +94,15 @@ export default function WorkProjects() {
         <li className="project">
           <Image
             src="/img/commerce.png"
-            alt="proyecto ecommerce"
+            alt="E-commerce jc"
             width={500}
             height={300}
+            onClick={() => redirectToExternalPage('https://ecommerce-javier.netlify.app/')}
+            className="cursor-pointer"
           />
           <div className="container-project">
             <div className="description-project">
-              <h4 className="offer">Un e-commerce web</h4>
+              <h4 className="offer">E-commerce web</h4>
               <p>
                 Mi primer e-commerce cuenta con un filtro por precio y
                 categoría, y dispone de un carrito de compras.
@@ -126,9 +132,11 @@ export default function WorkProjects() {
         <li className="project">
           <Image
             src="/img/income expenses.png"
-            alt="proyecto expenses"
+            alt="Control financier"
             width={500}
             height={300}
+            onClick={() => redirectToExternalPage('https://income-expenses-example.netlify.app/')}
+            className="cursor-pointer"
           />
           <div className="container-project">
             <div className="description-project">
@@ -161,9 +169,11 @@ export default function WorkProjects() {
         <li className="project">
           <Image
             src="/img/tic tac toe.png"
-            alt="proyecto tic tac toe"
+            alt="Tic Tac Toe"
             width={500}
             height={300}
+            onClick={() => redirectToExternalPage('https://javierh-castro.github.io/tic-tac-toe/')}
+            className="cursor-pointer"
           />
           <div className="container-project">
             <div className="description-project">
@@ -196,9 +206,11 @@ export default function WorkProjects() {
         <li className="project">
           <Image
             src="/img/crud 2.png"
-            alt="proyecto task"
+            alt="Crud de usuarios"
             width={500}
             height={300}
+            onClick={() => redirectToExternalPage('https://github.com/javierh-castro/CRUD-2')}
+            className="cursor-pointer"
           />
           <div className="container-project">
             <div className="description-project">

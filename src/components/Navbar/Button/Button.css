@@ -21,7 +21,6 @@
 }
 
 /* switch */
-
 .themeToggle {
   color: #fff;
   width: 1.5em;
@@ -100,4 +99,28 @@
   100% {
     transform: scale(1);
   }
+}
+
+/*Button cv*/
+.button {
+  padding-bottom: 0px;
+  width: 2.8em;
+  height: 1.8em;
+  background-color: #e8e8e810;
+  border: 1.2px solid var(--color-border);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  border: 1.2px solid var(--color-third);
+  background-color: #00000000;
+}
+
+.button a {
+  color: var(--color-primary);
+  text-decoration: none;
 }

@@ -7,13 +7,15 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import ButtonIdioma from "./Button/ButtonIdioma";
 import SwitchMode from "./Button/SwitchMode";
+import ButtonCv from "./Button/ButtonCv";
 import NavBarResponsive from "./NavBarResponsive/NavBarResponsive";
 
+
 const links = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/ServicesPage" },
-  { name: "Projects", href: "/WorkProjects" },
-  { name: "Skills", href: "/Skills" },
+  { name: "Inicio", href: "/" },
+  { name: "Servicios", href: "/ServicesPage" },
+  { name: "Proyectos", href: "/WorkProjects" },
+  { name: "Habilidades", href: "/Skills" },
 ];
 
 function NavBar() {
@@ -59,6 +61,7 @@ function NavBar() {
           <div className="hidden">
             <ButtonIdioma />
           </div>
+          <ButtonCv />
           <SwitchMode/>
         </div>
       </nav>

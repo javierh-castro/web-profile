@@ -48,8 +48,8 @@
 
 .project:hover .offer {
   width: 100%;
-  color: #7bdff2;
-  border-color: #7bdff2;
+  color: var(--color-third);
+  border-color: var(--color-third);
 }
 
 .project img {

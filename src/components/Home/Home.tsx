@@ -79,7 +79,7 @@ export default function Home() {
               </a>
               <a
                 className="cv"
-                href="https://docs.google.com/document/d/1teIMery5jQU2oLm9xv59Ly5G0Phe0HHErQqQmOmBs14/edit"
+                href="https://drive.google.com/file/d/175UWPbgDfl-TB--2RW_MTOwGb8SPp2RP/view?usp=drive_link"
                 target="_blank"
               >
                 <FaRegFileAlt />
