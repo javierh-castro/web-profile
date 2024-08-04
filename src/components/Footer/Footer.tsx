@@ -1,10 +1,14 @@
+'use client'
+import useTranslation from "@/src/hooks/use-translation";
 import "./Footer.css";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
-      <h3>Disponible para trabajar, conectemos.</h3>
-      <div>Encontrame en las redes: 
+      <h3>{t("footer.1")}</h3>
+      <div>{t("footer.2")}
       <div className="links_description">
             <a
               href="https://github.com/javierh-castro/mi_pagina_web"

@@ -37,28 +37,9 @@
   width: 40%;
 }
 
-.latest_projects h4 {
-  font-size: 30px;
-}
-
-.latest_projects ul {
-  padding-left: 0px;
-}
-
-.latest_projects a {
-  width: 280px;
-  font-size: 20px;
-  color: var(--color-primary);
-  border-bottom: 2px solid var(--color-third);
-  text-decoration: none;
-}
-
-.latest_projects a:hover {
-  border-bottom: 2px solid var(--color-primary);
-}
-
 .blur {
   box-shadow: 0 0 1000px 50px #1d4ed8;
+  /* z-index: -100; */
 }
 
 /*-----Escritura-automatica----------*/
@@ -96,7 +77,7 @@
 @keyframes words {
   0%,
   20% {
-    content: "Frontend Developer";
+    content: "Frontend Designer";
   }
   21%,
   40% {
@@ -104,7 +85,7 @@
   }
   41%,
   60% {
-    content: "UI / UX Designer";
+    content: "UI Designer";
   }
   61%,
   80% {
@@ -209,11 +190,17 @@
   transform: translateY(-1px);
 }
 
+/* body {
+min-height: 100vh;
+display: grid;
+place-items: center;
+} */
+
 .slider {
   height: 250px;
   margin: auto;
   position: relative;
-  width: 100%;
+  width: 90%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -221,8 +208,8 @@
 
 .slide-track {
   display: flex;
-  width: calc(200px * 36);
-  animation: scroll 55s linear infinite;
+  width: calc(250px * 18);
+  animation: scroll 25s linear infinite;
 }
 
 .slide-track:hover {
@@ -234,13 +221,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 18));
+    transform: translateX(calc(-250px * 9));
   }
 }
 
 .slide {
   height: 200px;
-  width: 200px;
+  width: 250px;
   display: flex;
   align-items: center;
   padding: 15px;
@@ -258,11 +245,8 @@
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(
-    to right,
-    var(--background-color) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right, rgb(13, 27, 42) 0%,
+  rgba(255,255,255,0) 100%);
   content: "";
   height: 100%;
   position: absolute;
@@ -278,14 +262,74 @@
 .slider::after {
   right: 0;
   top: 0;
-  transform: rotateZ(180deg);
+  transform: rotateZ(180deg)
 }
 
-.history span {
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 60s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: var(--clr-primary-400);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+.history span{
   color: var(--color-third);
 }
 
-/*-------------------Home-------------------*/
 @media (max-width: 1050px) {
   .text-animation {
     font-size: 30px;
@@ -293,6 +337,7 @@
 }
 
 @media (max-width: 760px) {
+  /*-------------------Home-------------------*/
   .home {
     height: auto;
     width: 93vw;
@@ -322,26 +367,14 @@
     height: 28px;
   }
 
-  .slide {
-    height: 150px;
-    width: 150px;
-    padding: 5px;
-  }
-  
-  .slide-track {
-    width: calc(150px * 36);
-    animation: scroll 25s linear infinite;
+  .scroller[data-animated="true"] .scroller__inner {
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-150px * 18));
-    }
+  .scroller__inner {
+    gap: 2rem;
   }
-  
 
   .history {
     margin: 50px 0px;

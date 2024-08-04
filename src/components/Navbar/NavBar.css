@@ -107,13 +107,7 @@
 }
 
 
-@media (max-width: 810px) {
-  .nav_links {
-    gap: 5px;
-  }
-}
-
-@media (max-width: 760px) {
+@media (max-width: 885px) {
   .NavBarResponsive {
     display: block;
     position: sticky;
@@ -123,5 +117,9 @@
 
   .nav-menu_visible{
     display: none;
+  }
+
+  .nav_links {
+    gap: 5px;
   }
 }

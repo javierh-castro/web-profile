@@ -4,12 +4,11 @@ import Link from "next/link";
 import "./NavBar.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import ButtonIdioma from "./Button/ButtonIdioma";
+import { useEffect, useState } from "react";
+import NavBarResponsive from "./NavBarResponsive/NavBarResponsive";
 import SwitchMode from "./Button/SwitchMode";
 import ButtonCv from "./Button/ButtonCv";
-import NavBarResponsive from "./NavBarResponsive/NavBarResponsive";
-
+import LangDropdown from "./Button/LangDropdown";
 
 const links = [
   { name: "Inicio", href: "/" },
@@ -38,7 +37,7 @@ function NavBar() {
       <div className="NavBarResponsive">
         <NavBarResponsive />
       </div>
-      <nav className="nav nav-menu_visible" style={{}}>
+      <nav className="nav nav-menu_visible">
         <Image
           className="logo"
           src="/img/jc.png"
@@ -57,12 +56,10 @@ function NavBar() {
             </li>
           ))}
         </ul>
-        <div className="flex gap-2">
-          <div className="hidden">
-            <ButtonIdioma />
-          </div>
+        <div className="flex gap-2 items-center">
           <ButtonCv />
-          <SwitchMode/>
+          <SwitchMode />
+          <LangDropdown />
         </div>
       </nav>
     </>

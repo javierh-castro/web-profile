@@ -27,7 +27,7 @@ export default function MySkills() {
           <ul className="skills-list">
             <li>
               <picture className="icon">
-                <img src="./icon/js.ico" alt="img icon" />
+                <img src="/icon/js.ico" alt="img icon" />
               </picture>
             </li>
             <li>

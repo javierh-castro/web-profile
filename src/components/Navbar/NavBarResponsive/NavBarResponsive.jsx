@@ -11,9 +11,8 @@ import {
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import { usePathname } from "next/navigation";
-import ButtonIdioma from "../Button/ButtonIdioma";
-import SwitchMode from "../Button/SwitchMode";
-import ButtonCv from "../Button/ButtonCv";
+import ButtonCv from "../Button/ButtonCv.jsx";
+import LangDropdown from "../Button/LangDropdown.tsx";
 
 export default function NavBarResponsive() {
   let pathname = usePathname();
@@ -32,17 +31,14 @@ export default function NavBarResponsive() {
 
       <NavbarContent className="sm:hidden p-0 m-0" justify="center">
         <NavbarBrand>
-          <div className="flex gap-2">
-            <div className="hidden">
-              <ButtonIdioma />
-            </div>
-            <ButtonCv />
-            {/* <SwitchMode /> */}
-          </div>
+        <div className="flex gap-2 items-center">
+          <ButtonCv />
+          <LangDropdown />
+        </div>
         </NavbarBrand>
       </NavbarContent>
       <NavbarMenu className="bg-blue-500 bg-opacity-50">
-        <AcmeLogo/>
+        <AcmeLogo />
         {menuItems.map((link, index) => (
           <NavbarMenuItem key={`${link}-${index}`}>
             <Link

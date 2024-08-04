@@ -14,38 +14,18 @@ import {
   SiMongodb,
   SiMysql,
   SiGithub,
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiJest,
+  SiAstro,
 } from "react-icons/si";
-import { RiNextjsLine, RiJavascriptFill } from "react-icons/ri";
-import { BiLogoTypescript } from "react-icons/bi";
-import { IoLogoPython } from "react-icons/io5";
+import { RiNextjsLine } from "react-icons/ri";
 import { FaNodeJs, FaGitAlt, FaLinkedin, FaRegFileAlt } from "react-icons/fa";
+import useTranslation from "@/src/hooks/use-translation";
 
 export default function Home() {
-  const scrollersRef = useRef<HTMLDivElement[]>([]);
-
-  useEffect(() => {
-    const scrollers = scrollersRef.current;
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      addAnimation(scrollers);
-    }
-  }, []);
-
-  const addAnimation = (scrollers: HTMLDivElement[]) => {
-    scrollers.forEach((scroller) => {
-      scroller.setAttribute("data-animated", "true");
-
-      const scrollerInner = scroller.querySelector(
-        ".scroller__inner"
-      ) as HTMLDivElement;
-      const scrollerContent = Array.from(scrollerInner.children);
-
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true) as HTMLElement;
-        duplicatedItem.setAttribute("aria-hidden", "true");
-        scrollerInner.appendChild(duplicatedItem);
-      });
-    });
-  };
+  const { t } = useTranslation();
 
   return (
     <section className="home">
@@ -55,13 +35,10 @@ export default function Home() {
           <div className="titulo">
             <h2>Javier Castro</h2>
             <h3 className="text-animation">
-              Yo soy <span></span>
+              {t("hello")}
+              <span></span>
             </h3>
-            <p>
-              Explora mis proyectos destacados, las competencias que he
-              adquirido y los logros importantes que reflejan mi compromiso y
-              pasión por mi profesión.
-            </p>
+            <p>{t("presentation")}</p>
             <div className="links-perfil">
               <a
                 className="git"
@@ -87,7 +64,7 @@ export default function Home() {
             </div>
           </div>
           <div className="latest_projects 1g:flex flex-col">
-            <h4>Últimos proyectos:</h4>
+            <h4>{t("last")}</h4>
             <ul className="flex flex-column  align-items-center">
               <a
                 target="_blank"
@@ -107,57 +84,135 @@ export default function Home() {
           </div>
         </article>
         <article>
-          <div
-            className="scroller"
-            ref={(el) => {
-              if (el) scrollersRef.current[0] = el;
-            }}
-          >
-            <div className="scroller__inner">
-              <FaGitAlt size={70} />
-              <SiCss3 size={70} />
-              <SiTailwindcss size={70} />
-              <SiReact size={70} />
-              <SiRedux size={70} />
-              <FaNodeJs size={70} />
-              <SiExpress size={70} />
-              <IoLogoPython size={70} />
-              <BiLogoTypescript size={70} />
-              <RiJavascriptFill size={70} />
-              <SiPostgresql size={70} />
-              <SiMongodb size={70} />
-              <SiMysql size={70} />
-              <SiZod size={70} />
-              <RiNextjsLine size={70} />
-              <SiNestjs size={70} />
+          <div className="slider">
+            <div className="slide-track">
+              <div className="slide">
+                <SiJavascript className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiTypescript className="img" size={70} />
+              </div>
+              <div className="slide">
+                <FaNodeJs className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiExpress className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiNestjs className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiPython className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiCss3 className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiTailwindcss className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiReact className="img" size={70} />
+              </div>
+              <div className="slide">
+                <RiNextjsLine className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiPostgresql className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiMongodb className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiMysql className="img" size={70} />
+              </div>
+              <div className="slide">
+                <FaGitAlt className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiRedux className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiZod className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiJest className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiAstro className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiJavascript className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiTypescript className="img" size={70} />
+              </div>
+              <div className="slide">
+                <FaNodeJs className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiExpress className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiNestjs className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiPython className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiCss3 className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiTailwindcss className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiReact className="img" size={70} />
+              </div>
+              <div className="slide">
+                <RiNextjsLine className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiPostgresql className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiMongodb className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiMysql className="img" size={70} />
+              </div>
+              <div className="slide">
+                <FaGitAlt className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiRedux className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiZod className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiJest className="img" size={70} />
+              </div>
+              <div className="slide">
+                <SiAstro className="img" size={70} />
+              </div>
             </div>
           </div>
         </article>
       </div>
       <article className="history">
-        <h2>Sobre mí</h2>
+        <h2>{t("about.title")}</h2>
+        <p>{t("about.description1")}</p>
         <p>
-          Desde niño, la tecnología ha sido mi pasión. Mis primeros encuentros
-          con computadoras y la fascinación por cómo funcionaban los programas
-          me guiaron hacia la computación.
+          {t("about.description2")}
+          <span>{t("about.span1")} </span>
+          {t("about.description3")}
         </p>
         <p>
-          Con el tiempo, mi interés creció y comencé a explorar la{" "}
-          <span>arquitectura y los detalles técnicos</span>, desde la simulación
-          por computadora hasta la
-          <span> configuración de hardware</span>. Pasaba horas desmantelando y
-          ensamblando computadoras, entendiendo el propósito de cada componente.
+          {t("about.description4")}
+          <span>{t("about.span2")}</span>
+          {t("about.description5", ["IES 9023"])}
         </p>
         <p>
-          Esta pasión me llevó a estudiar{" "}
-          <span> programación y creación de software</span> en el Instituto de
-          IES 9023. He trabajado en diversos proyectos, aplicando y ampliando
-          mis conocimientos. Cada proyecto es un nuevo desafío y una oportunidad
-          para crecer personal y profesionalmente.
-        </p>
-        <p>
-          Espero seguir desarrollando mi carrera, adquiriendo nuevas habilidades
-          y contribuyendo con mi conocimiento y experiencia.
+        {t("about.description6")}
         </p>
       </article>
     </section>

@@ -1,0 +1,20 @@
+{
+    "presentation": "Explora mis proyectos destacados, las competencias que he adquirido y los logros importantes que reflejan mi compromiso y pasión por mi profesión.",
+    "hello": "Yo soy ",
+    "last": "Últimos proyectos:",
+    "about": {
+        "title": "Sobre mí",
+        "description1": "Desde niño, la tecnología ha sido mi pasión. Mis primeros encuentros con computadoras y la fascinación por cómo funcionaban los programas me guiaron hacia la computación.",
+        "description2": "Con el tiempo, mi interés creció y comencé a explorar",
+        "description3": "Pasaba horas desmantelando y ensamblando computadoras, entendiendo el propósito de cada componente.",
+        "description4": "Esta pasión me llevó a estudiar",
+        "description5": "en el Instituto de {{0}}. He trabajado en diversos proyectos, aplicando y ampliando mis conocimientos. Cada proyecto es un nuevo desafío y una oportunidad para crecer personal y profesionalmente.",
+        "description6": "Espero seguir desarrollando mi carrera, adquiriendo nuevas habilidades y contribuyendo con mi conocimiento y experiencia.",
+        "span1": " la arquitectura, los detalles técnicos y la configuración de hardware.",
+        "span2": " programación y creación de software "
+    },
+    "footer": {
+        "1": "Disponible para trabajar, conectemos.",
+        "2": "Encontrame en las redes:"
+    }
+}

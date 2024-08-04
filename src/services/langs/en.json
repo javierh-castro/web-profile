@@ -1,0 +1,20 @@
+{
+    "presentation": "Explore my featured projects, the skills I have acquired and the important achievements that reflect my commitment and passion for my profession.",
+    "hello": "I am ",
+    "last": "Last projects:",
+    "about": {
+        "title": "About me",
+        "description1": "Since I was a child, technology has been my passion. My first encounters with computers and fascination with how programs worked guided me towards computing.",
+        "description2": "Over time, my interest grew and I began to explore",
+        "description3": "He spent hours dismantling and assembling computers, understanding the purpose of each component.",
+        "description4": "This passion led me to study",
+        "description5": "at the Institute of {{0}}. I have worked on various projects, applying and expanding my knowledge. Each project is a new challenge and an opportunity to grow personally and professionally.",
+        "description6": "I hope to continue developing my career, acquiring new skills and contributing my knowledge and experience.",
+        "span1": " the architecture, technical details and hardware configuration.",
+        "span2": " programming and software creation "
+    },
+    "footer": {
+        "1": "Available to work, let's connect.",
+        "2": "Find me on the networks:"
+    }
+}
