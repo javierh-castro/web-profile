@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Navbar,
@@ -13,14 +15,17 @@ import { AcmeLogo } from "./AcmeLogo.jsx";
 import { usePathname } from "next/navigation";
 import ButtonCv from "../Button/ButtonCv.jsx";
 import LangDropdown from "../Button/LangDropdown.tsx";
+import useTranslation from "@/src/hooks/use-translation.tsx";
 
 export default function NavBarResponsive() {
   let pathname = usePathname();
-  const menuItems = [
-    { name: "Inicio", href: "/" },
-    { name: "Servicios", href: "/ServicesPage" },
-    { name: "Proyectos", href: "/WorkProjects" },
-    { name: "Habilidades", href: "/Skills" },
+  const { t } = useTranslation();
+
+  const links = [
+    { name: "nav.home", href: "/" },
+    { name: "nav.services", href: "/ServicesPage" },
+    { name: "nav.projects", href: "/WorkProjects" },
+    { name: "nav.skills", href: "/Skills" },
   ];
 
   return (
@@ -31,22 +36,22 @@ export default function NavBarResponsive() {
 
       <NavbarContent className="sm:hidden p-0 m-0" justify="center">
         <NavbarBrand>
-        <div className="flex gap-2 items-center">
-          <ButtonCv />
-          <LangDropdown />
-        </div>
+          <div className="flex gap-2 items-center">
+            <ButtonCv />
+            <LangDropdown />
+          </div>
         </NavbarBrand>
       </NavbarContent>
       <NavbarMenu className="bg-blue-500 bg-opacity-50">
         <AcmeLogo />
-        {menuItems.map((link, index) => (
+        {links.map((link, index) => (
           <NavbarMenuItem key={`${link}-${index}`}>
             <Link
               className="w-full"
               color={
                 index === 1
                   ? "warning"
-                  : index === menuItems.length - 1
+                  : index === links.length - 1
                   ? "danger"
                   : "foreground"
               }
@@ -54,7 +59,7 @@ export default function NavBarResponsive() {
               size="lg"
             >
               <p className={`${pathname === link.href ? "active_link" : ""}`}>
-                {link.name}
+                {t(`${link.name}`)}
               </p>
             </Link>
           </NavbarMenuItem>

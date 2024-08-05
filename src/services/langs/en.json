@@ -2,6 +2,12 @@
     "presentation": "Explore my featured projects, the skills I have acquired and the important achievements that reflect my commitment and passion for my profession.",
     "hello": "I am ",
     "last": "Last projects:",
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
     "about": {
         "title": "About me",
         "description1": "Since I was a child, technology has been my passion. My first encounters with computers and fascination with how programs worked guided me towards computing.",
@@ -16,5 +22,23 @@
     "footer": {
         "1": "Available to work, let's connect.",
         "2": "Find me on the networks:"
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name:",
+        "message": "Message:",
+        "buttonSend": "Send",
+        "userInput": {
+            "name": "Enter your name",
+            "email": "Enter your email",
+            "message": "Enter your message"
+        },
+        "description": {
+            "address": "ADDRESS",
+            "presentation": "You can contact me by sending an email or through my social networks. Wait for your message!"
+        },
+        "successfully": "Sent successfully!",
+        "failed": "The email could not be sent.",
+        "error": "Failed to send email."
     }
 }

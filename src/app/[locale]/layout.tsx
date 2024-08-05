@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // import { NextUIProvider } from '@nextui-org/react';
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/Navbar/NavBar";
+import NavBarResponsive from "../../components/Navbar/NavBarResponsive/NavBarResponsive";
 import { TranslationsProvider } from "@neiderruiz/translate-files/next-js";
 import i18nConfig from "@/i18nConfig";
 import { resources } from "@/src/services/langs";
@@ -21,12 +22,9 @@ type Props = {
   params: { locale: string };
 };
 
-export default function RootLayout({
-  children,
-  params: { locale }
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children, params }: Props) {
+  const { locale } = params;
+
   return (
     <html lang={locale}>
       <head>
@@ -38,9 +36,9 @@ export default function RootLayout({
       </head>
       <body className={`body ${montserrat.className} antialiased`}>
         <TranslationsProvider
-        fallbackLng={i18nConfig.locales}
-        locale={locale}
-        resources={resources}
+          fallbackLng={i18nConfig.locales}
+          locale={locale}
+          resources={resources}
         >
           <NavBar />
           {children}

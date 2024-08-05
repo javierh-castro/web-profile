@@ -1,18 +1,52 @@
-'use client'
-import { useForm, ValidationError } from "@formspree/react";
-import "./ContactForm.css";
-// import "@/src/app/globals.css";
+"use client";
 
+// import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
+import "./ContactForm.css";
+import useTranslation from "@/src/hooks/use-translation";
 function ContactForm() {
-  const [state, handleSubmit] = useForm("signupForm"); //<handleType>
-  console.log(state);
-  if (state.succeeded) {
-    return <p>Thanks for send the Message!</p>;
-  }
+  const { t } = useTranslation();
+
+  const [formData, setFormData] = useState({
+    to: "",
+    subject: "",
+    text: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert(t("contact.successfully"));
+      } else {
+        alert(t("contact.failed"));
+      }
+    } catch (error) {
+      alert(t("contact.error"));
+    }
+  };
 
   return (
     <section id="contact" className="contact">
-      <h1>Contacto</h1>
+      <h1>{t("contact.title")}</h1>
       <div className="format_contact">
         <form
           className="contact_form"
@@ -20,12 +54,14 @@ function ContactForm() {
           onSubmit={handleSubmit}
         >
           <p className="input_field">
-            <label htmlFor="name">Nombre:</label>
+            <label htmlFor="name">{t("contact.name")}</label>
             <input
               type="text"
               id="name"
-              name="name"
-              placeholder="Ingrese tu nombre"
+              name="subject"
+              onChange={handleChange}
+              placeholder={t("contact.userInput.name")}
+              value={formData.subject}
               required
             />
           </p>
@@ -33,50 +69,36 @@ function ContactForm() {
             <label htmlFor="email">Email:</label>
             <input
               type="email"
-              id="email"
-              name="email"
-              placeholder="Ingrese tu email"
+              name="to"
+              value={formData.to}
+              onChange={handleChange}
+              placeholder={t("contact.userInput.email")}
               required
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
             />
           </p>
           <p className="input-field">
-            <label htmlFor="message">Mensaje:</label>
+            <label htmlFor="message">{t("contact.message")}</label>
             <textarea
               id="message"
-              name="message"
-              placeholder="Ingrese tu mensaje"
+              name="text"
+              value={formData.text}
+              onChange={handleChange}
+              placeholder={t("contact.userInput.message")}
               required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
             />
           </p>
           <p>
-            <button
-              className="button_form"
-              type="submit"
-              disabled={state.submitting}
-            >
-              Enviar
+            <button className="button_form" type="submit">
+              {t("contact.buttonSend")}
             </button>
           </p>
         </form>
         <article className="description">
-          <h4>DIRECCIÓN:</h4>
+          <h4>{t("contact.description.address")}</h4>
           <p>Mendoza, Argentina</p>
           <h4>EMAIL:</h4>
           <p>javiercastrohernan@gmail.com</p>
-          <p>
-            Puedes contactarme enviando un mail o a través de mis redes
-            sociales. ¡Espero tu mensaje!
-          </p>
+          <p>{t("contact.description.presentation")}</p>
         </article>
       </div>
     </section>

@@ -2,6 +2,12 @@
     "presentation": "Explora mis proyectos destacados, las competencias que he adquirido y los logros importantes que reflejan mi compromiso y pasión por mi profesión.",
     "hello": "Yo soy ",
     "last": "Últimos proyectos:",
+    "nav": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "skills": "Habilidades"
+    },
     "about": {
         "title": "Sobre mí",
         "description1": "Desde niño, la tecnología ha sido mi pasión. Mis primeros encuentros con computadoras y la fascinación por cómo funcionaban los programas me guiaron hacia la computación.",
@@ -16,5 +22,23 @@
     "footer": {
         "1": "Disponible para trabajar, conectemos.",
         "2": "Encontrame en las redes:"
+    },
+    "contact": {
+        "title": "Contacto",
+        "name": "Nombre:",
+        "message": "Mensaje:",
+        "buttonSend": "Enviar",
+        "userInput": {
+            "name": "Ingrese su nombre",
+            "email": "Ingrese su email",
+            "message": "Ingrese su mensaje"
+        },
+        "description": {
+            "address": "DIRECCIÓN",
+            "presentation": "Puedes contactarme enviando un mail o a través de mis redes sociales. ¡Espero tu mensaje!"
+        },
+        "successfully": "Enviado exitosamente!",
+        "failed": "No se pudo enviar el correo electrónico.",
+        "error": "Error al enviar el correo electrónico."
     }
 }

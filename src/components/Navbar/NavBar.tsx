@@ -4,40 +4,29 @@ import Link from "next/link";
 import "./NavBar.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 import NavBarResponsive from "./NavBarResponsive/NavBarResponsive";
 import SwitchMode from "./Button/SwitchMode";
 import ButtonCv from "./Button/ButtonCv";
 import LangDropdown from "./Button/LangDropdown";
-
-const links = [
-  { name: "Inicio", href: "/" },
-  { name: "Servicios", href: "/ServicesPage" },
-  { name: "Proyectos", href: "/WorkProjects" },
-  { name: "Habilidades", href: "/Skills" },
-];
+import useTranslation from "@/src/hooks/use-translation";
 
 function NavBar() {
   let pathname = usePathname();
-  const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
+  const { t } = useTranslation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setClientWindowHeight(window.scrollY);
-    };
-
-    setClientWindowHeight(window.scrollY);
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const links = [
+    { name: "nav.home", href: "/" },
+    { name: "nav.services", href: "/ServicesPage" },
+    { name: "nav.projects", href: "/WorkProjects" },
+    { name: "nav.skills", href: "/Skills" },
+  ];
 
   return (
     <>
-      <div className="NavBarResponsive">
+      <nav className="NavBarResponsive">
         <NavBarResponsive />
-      </div>
-      <nav className="nav nav-menu_visible">
+      </nav>
+      <nav className="nav nav-menu-visible">
         <Image
           className="logo"
           src="/img/jc.png"
@@ -50,7 +39,7 @@ function NavBar() {
             <li key={link.name}>
               <Link href={link.href}>
                 <p className={`${pathname === link.href ? "active_link" : ""}`}>
-                  {link.name}
+                  {t(`${link.name}`)}
                 </p>
               </Link>
             </li>
