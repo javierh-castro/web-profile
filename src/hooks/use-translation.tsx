@@ -2,7 +2,7 @@ import {
   FlattenKeys,
   useTypedTranslation,
 } from "@neiderruiz/translate-files/next-js/hooks";
-import en from "@/servicesservices/langs/en.json";
+import en from "@/src/services/langs/en.json";
 type Tylelang = typeof en;
 
 export type KeysTranslation = FlattenKeys<Tylelang>;

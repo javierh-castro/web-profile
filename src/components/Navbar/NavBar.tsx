@@ -10,11 +10,19 @@ import ButtonCv from "./Button/ButtonCv";
 import LangDropdown from "./Button/LangDropdown";
 import useTranslation from "@/src/hooks/use-translation";
 
+type NavLinkName = "nav.home" | "nav.services" | "nav.projects" | "nav.skills";
+
+interface NavLink {
+  name: NavLinkName;
+  href: string;
+}
+
+
 function NavBar() {
   let pathname = usePathname();
   const { t } = useTranslation();
 
-  const links = [
+  const links: NavLink[] = [
     { name: "nav.home", href: "/" },
     { name: "nav.services", href: "/ServicesPage" },
     { name: "nav.projects", href: "/WorkProjects" },
@@ -39,7 +47,7 @@ function NavBar() {
             <li key={link.name}>
               <Link href={link.href}>
                 <p className={`${pathname === link.href ? "active_link" : ""}`}>
-                  {t(`${link.name}`)}
+                  {t(link.name)}
                 </p>
               </Link>
             </li>
