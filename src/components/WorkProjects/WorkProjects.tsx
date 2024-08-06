@@ -1,9 +1,12 @@
 "use client"
+
+import useTranslation from "@/src/hooks/use-translation";
 import "./WorkProjects.css";
 import Image from "next/image";
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact, SiCss3, SiNodedotjs, SiZod } from "react-icons/si";
 
 export default function WorkProjects() {
+  const { t } = useTranslation();
 
   const redirectToExternalPage = (url) => {
     window.open(url, "_blank");
@@ -11,7 +14,7 @@ export default function WorkProjects() {
 
   return (
     <section className="work-projects">
-      <h1>Proyectos</h1>
+      <h1>{t("nav.projects")}</h1>
       <ul className="projects">
         <li className="project">
           <Image
@@ -24,11 +27,9 @@ export default function WorkProjects() {
           />
           <div className="container-project">
             <div className="description-project">
-              <h4 className="offer">Estado del tiempo</h4>
+              <h4 className="offer">{t("workprojects.title1")}</h4>
               <p>
-                Consulta el tiempo de cualquier ciudad con esta aplicación
-                construida con React y TypeScript. Este proyecto también se
-                utilizo Zod para validación y esquema de datos.
+                {t("workprojects.time")}
               </p>
             </div>
             <ul className="url-links">
@@ -65,9 +66,7 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">Recipify</h4>
               <p>
-                Recipify es desarrollado junto a compañeros para la asignatura
-                de programación. La web permite registrarse, buscar recetas de
-                cocina y publicar las recetas.
+              {t("workprojects.recipify", ["nextauth"])}
               </p>
             </div>
             <ul className="url-links">
@@ -104,8 +103,7 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">E-commerce web</h4>
               <p>
-                Mi primer e-commerce cuenta con un filtro por precio y
-                categoría, y dispone de un carrito de compras.
+              {t("workprojects.ecommerce")}
               </p>
             </div>
             <ul className="url-links">
@@ -140,10 +138,9 @@ export default function WorkProjects() {
           />
           <div className="container-project">
             <div className="description-project">
-              <h4 className="offer">Control financiero</h4>
+              <h4 className="offer">{t("workprojects.title4")}</h4>
               <p>
-                Organiza el balance financiero y genera un registro detallado de
-                gastos e ingresos.
+                {t("workprojects.financial")}
               </p>
             </div>
             <ul className="url-links">
@@ -179,8 +176,7 @@ export default function WorkProjects() {
             <div className="description-project">
               <h4 className="offer">Tic Tac Toe</h4>
               <p>
-                Juego de Tic Tac Toe desarrollado con React. Utiliza React
-                Context Provider para la gestión del estado
+                {t("workprojects.tictactoe")}
               </p>
             </div>
             <ul className="url-links">
@@ -214,10 +210,9 @@ export default function WorkProjects() {
           />
           <div className="container-project">
             <div className="description-project">
-              <h4 className="offer">Crud de usuarios</h4>
+              <h4 className="offer">Crud Users</h4>
               <p>
-                Un CRUD que muestra detalles de los usuarios y se integra con
-                una base de datos.
+                {t("workprojects.crud")}
               </p>
             </div>
             <ul className="url-links">

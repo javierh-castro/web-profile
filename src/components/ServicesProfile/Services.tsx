@@ -1,22 +1,23 @@
+'use client'
+
 import React from "react";
 import "./Services.css";
 import Image from "next/image";
+import useTranslation from "@/src/hooks/use-translation";
 
 function ServicesProfile() {
+  const { t } = useTranslation();
+
   return (
     <section className="ServicesProfile">
-      <h1>Servicios</h1>
+      <h1>{t("nav.services")}</h1>
       <ul className="cards-container">
         <div className="card">
           <Image src="/img/diseño.jpg" alt="diseño" width={500} height={300} />
           <aside>
-            <h3>Diseño</h3>
+            <h3>{t("servicesprofile.desing")}</h3>
             <p>
-              Me especializo en diseñar software intuitivo y atractivo, desde la
-              concepción inicial hasta el producto final. Utilizo métodos ágiles
-              para iterar rápidamente y ajustar el diseño según el feedback de
-              los usuarios, asegurando que cumpla con altos estándares de
-              calidad y sus necesidades.
+              {t("servicesprofile.desingdescription")}
             </p>
           </aside>
         </div>
@@ -28,13 +29,9 @@ function ServicesProfile() {
             height={300}
           />
           <aside>
-            <h3>Desarrollo</h3>
+            <h3>{t("servicesprofile.development")}</h3>
             <p>
-              En el desarrollo aseguro la robustez y escalabilidad del sistema.
-              Colaboro estrechamente con equipos utilizando metodologías para
-              adaptar rápidamente el producto a medida que evoluciona,
-              garantizando soluciones que no solo funcionen bien, sino que
-              también sean fáciles de mantener.
+            {t("servicesprofile.developmentdescription")}
             </p>
           </aside>
         </div>
@@ -46,13 +43,9 @@ function ServicesProfile() {
             height={300}
           />
           <aside>
-            <h3>Mantenimiento</h3>
+            <h3>{t("servicesprofile.maintenance")}</h3>
             <p>
-              En el mantenimiento de software, garantizo sistemas eficientes y
-              sin problemas. Detecto y corrijo problemas antes de que afecten a
-              los usuarios, implemento actualizaciones cuidadosamente para
-              mantener un funcionamiento seguro y continuo, adaptándome a nuevas
-              necesidades según surjan.
+            {t("servicesprofile.maintenancedescription")}
             </p>
           </aside>
         </div>

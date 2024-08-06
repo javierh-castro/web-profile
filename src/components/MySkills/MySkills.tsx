@@ -1,26 +1,24 @@
+'use client'
+
 import "./MySkills.css";
+import useTranslation from "@/src/hooks/use-translation";
 
 export default function MySkills() {
+  const { t } = useTranslation();
+
   return (
     <section className="skills">
-      <h1 className="no-responsive section">Habilidades</h1>
+      <h1 className="no-responsive section">{t("nav.skills")}</h1>
       <div className="format">
         <article className="skills-text">
           <p>
-            Poseo sólidos conocimientos y experiencia en desarrollo de software,
-            destacándome en la creación de aplicaciones innovadoras y
-            eficientes. Mi destreza incluye programación en varios lenguajes y
-            resolución de problemas.
+            {t("skills.1")}
           </p>
           <p>
-            Estoy encantado de tener la oportunidad de discutir cómo mis
-            habilidades y experiencia que puedan contribuir al éxito de sus
-            proyecto.
+          {t("skills.2")}
           </p>
           <p>
-            Siempre estoy en la búsqueda de mejorar mis habilidades y la
-            adaptación constante a las nuevas tendencias y tecnologías del
-            campo.
+          {t("skills.3")}
           </p>
         </article>
         <article className="skills-icon">

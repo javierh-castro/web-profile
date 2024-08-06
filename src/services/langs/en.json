@@ -39,6 +39,30 @@
         },
         "successfully": "Sent successfully!",
         "failed": "The email could not be sent.",
-        "error": "Failed to send email."
+        "error": "Failed to send email.",
+        "sending": "Sending..."
+    },
+    "servicesprofile": {
+        "desing": "Design",
+        "desingdescription": "I specialize in designing intuitive and engaging software, from initial conception to final product. I use agile methods to quickly iterate and adjust the design based on user feedback, ensuring it meets high quality standards and their needs.",
+        "development": "Development",
+        "developmentdescription": "In development I ensure the robustness and scalability of the system. I collaborate closely with teams using methodologies to quickly adapt the product as it evolves, ensuring solutions that not only work well, but are also easy to maintain.",
+        "maintenance": "Maintenance",
+        "maintenancedescription": "In software maintenance, I guarantee efficient and problem-free systems. I detect and fix problems before they affect users, carefully deploying updates to maintain safe and continuous operation, adapting to new needs as they arise."
+    },
+    "workprojects": {
+        "time": "Check the weather in any city with this application built with React and TypeScript. This project also used Zod for data validation and schema.",
+        "recipify": "Recipify is developed together with classmates for the programming subject. The website allows you to register, search for cooking recipes and publish recipes, it has integrated {{0}}, JWT, roles and verification.",
+        "ecommerce": "My first e-commerce has a filter by price and category, and has a shopping cart.",
+        "financial": "Organize the financial balance and generate a detailed record of expenses and income.",
+        "tictactoe": "Tic Tac Toe game developed with React, used in React Context Provider project for state management.",
+        "crud": "A CRUD that displays user details and integrates with a database.",
+        "title1": "Weather",
+        "title4": "Financial control"
+    },
+    "skills": {
+        "1": "I have solid knowledge and experience in software development, excelling in creating innovative and efficient applications. My skills include programming in various languages ​​and problem solving.",
+        "2": "I am delighted to have the opportunity to discuss how my skills and experience can contribute to the success of your project.",
+        "3": "I am always looking to improve my skills and constantly adapt to new trends and technologies in the field."
     }
 }

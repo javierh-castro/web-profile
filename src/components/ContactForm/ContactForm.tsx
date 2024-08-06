@@ -1,6 +1,5 @@
 "use client";
 
-// import { useForm, ValidationError } from "@formspree/react";
 import { useState } from "react";
 import "./ContactForm.css";
 import useTranslation from "@/src/hooks/use-translation";
@@ -8,12 +7,13 @@ function ContactForm() {
   const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
-    to: "",
-    subject: "",
-    text: "",
+    name: "",
+    email: "",
+    message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -21,8 +21,9 @@ function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
 
     try {
       const response = await fetch("/api/send-email", {
@@ -36,11 +37,18 @@ function ContactForm() {
       const result = await response.json();
       if (result.success) {
         alert(t("contact.successfully"));
+        setFormData({
+          name: "",
+          email: "",
+          message: ""
+        });
       } else {
         alert(t("contact.failed"));
       }
     } catch (error) {
       alert(t("contact.error"));
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -58,10 +66,10 @@ function ContactForm() {
             <input
               type="text"
               id="name"
-              name="subject"
+              name="name"
+              value={formData.name}
               onChange={handleChange}
               placeholder={t("contact.userInput.name")}
-              value={formData.subject}
               required
             />
           </p>
@@ -69,8 +77,9 @@ function ContactForm() {
             <label htmlFor="email">Email:</label>
             <input
               type="email"
-              name="to"
-              value={formData.to}
+              id="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
               placeholder={t("contact.userInput.email")}
               required
@@ -80,16 +89,16 @@ function ContactForm() {
             <label htmlFor="message">{t("contact.message")}</label>
             <textarea
               id="message"
-              name="text"
-              value={formData.text}
+              name="message"
+              value={formData.message}
               onChange={handleChange}
               placeholder={t("contact.userInput.message")}
               required
             />
           </p>
           <p>
-            <button className="button_form" type="submit">
-              {t("contact.buttonSend")}
+            <button className="button_form" type="submit" disabled={isLoading}>
+              {isLoading ? t("contact.sending") : t("contact.buttonSend")}
             </button>
           </p>
         </form>
