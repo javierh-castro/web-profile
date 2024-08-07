@@ -59,7 +59,7 @@ export default function WorkProjects() {
             alt="Recipify"
             width={500}
             height={300}
-            onClick={() => redirectToExternalPage('https://recipify-rho.vercel.app/recetas')}
+            onClick={() => redirectToExternalPage('https://github.com/javierh-castro/proyect-recipify')}
             className="cursor-pointer"
           />
           <div className="container-project">
