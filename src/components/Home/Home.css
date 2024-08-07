@@ -12,7 +12,6 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  /* border: 2px solid red; */
 }
 
 .presentation {
@@ -210,7 +209,7 @@
 }
 
 .slider {
-  height: 250px;
+  height: 200px;
   margin: auto;
   position: relative;
   width: 100%;
@@ -305,6 +304,10 @@
   .titulo {
     margin-top: 30px;
     width: 100%;
+  }
+
+  .blur {
+    box-shadow: none;
   }
 
   .titulo h2 {
