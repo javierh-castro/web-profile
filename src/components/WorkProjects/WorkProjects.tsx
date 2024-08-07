@@ -77,7 +77,7 @@ export default function WorkProjects() {
                   className="bi-github"
                 ></a>
                 <a
-                  href="https://recipify-rho.vercel.app/recetas"
+                  href="https://github.com/javierh-castro/proyect-recipify"
                   target="_blank"
                   className="bi bi-link"
                 ></a>
