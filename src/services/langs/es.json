@@ -50,19 +50,67 @@
         "maintenance": "Mantenimiento",
         "maintenancedescription": "En el mantenimiento de software, garantizo sistemas eficientes ysin problemas. Detecto y corrijo problemas antes de que afecten a los usuarios, implemento actualizaciones cuidadosamente para mantener un funcionamiento seguro y continuo, adaptándome a nuevas necesidades según surjan."
     },
-    "workprojects": {
-        "time": "Consulta el tiempo de cualquier ciudad con esta aplicación construida con React y TypeScript. Este proyecto también se utilizo Zod para validación y esquema de datos.",
-        "recipify": "Recipify es desarrollado junto a compañeros para la asignatura de programación. La web permite registrarse, buscar recetas de cocina y publicar las recetas, tiene integrado {{0}}, JWT, roles y verificación.",
-        "ecommerce": "Mi primer e-commerce cuenta con un filtro por precio y categoría, y dispone de un carrito de compras.",
-        "financial": "Organiza el balance financiero y genera un registro detallado de gastos e ingresos.",
-        "tictactoe": "Juego de Tic Tac Toe desarrollado con React, se utiliza en proyecto React Context Provider para la gestión del estado.",
-        "crud": "Un CRUD que muestra detalles de los usuarios y se integra con una base de datos.",
-        "title1": "Estado del Tiempo",
-        "title4": "Control Financiero"
-    },
     "skills": {
         "1": "Poseo sólidos conocimientos y experiencia en desarrollo de software, destacado en la creación de aplicaciones innovadoras y eficientes. Mi destreza incluye programación en varios lenguajes y resolución de problemas.",
         "2": "Estoy encantado de tener la oportunidad de discutir cómo mis habilidades y experiencia que puedan contribuir al éxito de sus proyecto.",
         "3": "Siempre estoy en la búsqueda de mejorar mis habilidades y la adaptación constante a las nuevas tendencias y tecnologías del campo."
-    }
+    },
+    "workprojects": [
+        {
+            "title": "Bebidas Cocktail",
+            "description": "Una aplicación web que permite a los usuarios explorar y ver recetas  de tragos de diferentes tipos, desarrollado con  React y TypeScript.",
+            "img": "cocktail",
+            "url": "https://bebidas-react-typescript-lyart.vercel.app/",
+            "github": "https://github.com/javierh-castro/bebidas-react-typescript",
+            "skill": "React, Tailwindcss, Zod"
+        },
+        {
+            "title": "Estado del Tiempo",
+            "description": "Consulta el tiempo de cualquier ciudad con esta aplicación construida con React y TypeScript. Este proyecto también se utilizo Zod para validación y esquema de datos.",
+            "img": "buscarclima",
+            "url": "https://cheery-cat-44c418.netlify.app/",
+            "github": "https://github.com/javierh-castro/clima-react",
+            "skill": "Typescript, Next, Zod"
+        },
+        {
+            "title": "Recipify",
+            "description": "Recipify es desarrollado junto a compañeros para la asignatura de programación. La web permite registrarse, buscar recetas de cocina y publicar las recetas, tiene integrado nextauth, JWT, roles y verificación.",
+            "img": "recipify",
+            "url": "https://github.com/javierh-castro/proyect-recipify",
+            "github": "https://github.com/javierh-castro/proyect-recipify",
+            "skill": "Typescript, Next, Tailwindcss"
+        },
+        {
+            "title": "Tic Tac Toe",
+            "description": "Juego de Tic Tac Toe desarrollado con React, se utiliza en proyecto React Context Provider para la gestión del estado.",
+            "img": "tic tac toe",
+            "url": "https://javierh-castro.github.io/tic-tac-toe/",
+            "github": "https://github.com/javierh-castro/tic-tac-toe",
+            "skill": "React, Css"
+        },
+        {
+            "title": "Control Financiero",
+            "description": "Organiza el balance financiero y genera un registro detallado de gastos e ingresos.",
+            "img": "income expenses",
+            "url": "https://income-expenses-example.netlify.app/",
+            "github": "https://github.com/javierh-castro/Income-and-Expenses",
+            "skill": "React, Tailwindcss"
+        },
+        {
+            "title": "E-commerce web",
+            "img": "commerce",
+            "description": "Mi primer e-commerce cuenta con un filtro por precio y categoría, y dispone de un carrito de compras.",
+            "url": "https://ecommerce-javier.netlify.app/",
+            "github": "https://github.com/javierh-castro/proyect-ecommerce/tree/master",
+            "skill": "React, Css"
+        },
+        {
+            "title": "Crud Users",
+            "description": "Un CRUD que muestra detalles de los usuarios y se integra con una base de datos.",
+            "img": "crud 2",
+            "url": "https://github.com/javierh-castro/CRUD-2",
+            "github": "https://github.com/javierh-castro/CRUD-2",
+            "skill": "Node, Typescript"
+        }
+    ]
 }
