@@ -57,6 +57,14 @@
     },
     "workprojects": [
         {
+            "title": "Administrador de Wroductos Web",
+            "description": "Es una aplicación que permite organizar, editar y gestionar productos de manera eficiente. Implementa operaciones CRUD con una interfaz de usuario intuitiva y optimizada para distintos dispositivos.",
+            "img": "manager_app",
+            "url": "https://api-rest-typescript-frontend.vercel.app/",
+            "github": "https://github.com/javierh-castro/api-rest-typescript-frontend",
+            "skill": "React, Tailwindcss, Node, Postgresql, Express"
+        },
+        {
             "title": "Bebidas Cocktail",
             "description": "Una aplicación web que permite a los usuarios explorar y ver recetas  de tragos de diferentes tipos, desarrollado con  React y TypeScript.",
             "img": "cocktail",
