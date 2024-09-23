@@ -57,8 +57,8 @@
     },
     "workprojects": [
         {
-            "title": "Web Product Manager",
-            "description": "It is an application that allows you to organize, edit and manage products efficiently. Implement CRUD operations with an intuitive user interface optimized for different devices.",
+            "title": "Product Manager",
+            "description": "It is an application that allows you to organize, edit and manage products. Implement CRUD operations with an intuitive user interface optimized for different devices.",
             "img": "manager_app",
             "url": "https://api-rest-typescript-frontend.vercel.app/",
             "github": "https://github.com/javierh-castro/api-rest-typescript-frontend",
@@ -120,7 +120,5 @@
             "github": "https://github.com/javierh-castro/CRUD-2",
             "skill": "Node, Typescript"
         }
-    
-    
     ]
 }
