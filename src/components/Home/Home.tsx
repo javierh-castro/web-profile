@@ -56,7 +56,7 @@ export default function Home() {
               </a>
               <a
                 className="cv"
-                href="https://drive.google.com/file/d/175UWPbgDfl-TB--2RW_MTOwGb8SPp2RP/view?usp=drive_link"
+                href="https://docs.google.com/document/d/1zzNQWFV0Ot4Z1y_DBdKFTENmxfCCBLNZ/edit?usp=sharing&ouid=109350623662474160610&rtpof=true&sd=true"
                 target="_blank"
               >
                 <FaRegFileAlt />
